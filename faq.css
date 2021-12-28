@@ -1,0 +1,100 @@
+*{margin: 0 auto; font-family: 'Noto Sans KR', sans-serif;}
+button{
+    padding: 0;
+    background-color: #00204A; color: #fff; border: none; font-size: 20px; width: 75px; height: 48px;}
+
+p{font-size: 16px;}
+
+.yellow{color: #f0d047;}
+
+.faq{
+    width: 1216px;
+}
+
+.faqTop{
+    margin-top: 52px;
+}
+
+.faqTop > span{
+    float: left;
+    font-size: 48px;
+    border-bottom: 2px solid #f0d047;
+    margin: 0;
+}
+
+
+.faqTop > .search{
+    display: inline-block;
+    padding: 14px;
+    margin-left: 180px;
+}
+.faqTop > .search >form > input{
+    width: 374px;
+    height: 44px;
+    padding: 0;
+    margin-right: 10px;
+}
+
+.faqTop > .search >form ::placeholder{padding-left: 16px;}
+
+
+.faqBot > .accordion{
+    margin-top: 77px;
+}
+
+.faqBot > .accordion > div > p{
+    margin-left: 275px;
+}
+
+
+span{
+    font-size: 16px;
+    margin: 0 120px 0 143px;
+    color: #252958;
+}
+
+
+input[id*="answer"]{
+    display: none;
+}
+input[id*="answer"] +label{
+    display: block;
+    padding: 20px;
+    border-bottom: 1px solid #232188;
+    cursor: pointer;
+    position: relative;
+}
+
+input[id*="answer"] + label em{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    display: inline-block;
+    transition: 0.5s;
+    background:url(../songam/img/arrow.png) 0 0 no-repeat;
+}
+input[id*="answer"] + label + div{
+    max-height: 0;
+    transition: all 0.5s;
+    overflow: hidden;
+    background-color: #F0F0E4; 
+    font-size: 11px;
+}
+
+input[id*="answer"] + label + div p{
+    display: inline-block;
+    padding: 20px;
+}
+
+
+input[id*="answer"]:checked + label + div{
+    max-height: 100px;
+}
+
+input[id*="answer"]:checked + label em{
+    transition: 0.5s;
+    background:url(../songam/img/arrow_t.png) 0 0 no-repeat;
+}
