@@ -245,4 +245,145 @@ footer > .ft > .footerInfo > p{
 
 
 
+/* ////////////태블릿 시작//////////// */
+@media screen and (min-width:834px) and (max-width:1023px){
+    /* *{background-color: blueviolet;} */
+
+    button{
+        padding: 0;
+        background-color: #00204A; color: #fff; border: none; font-size: 20px; width: 45px; height: 44px;}
+    
+    p{font-size: 16px;}
+    
+    .yellow{color: #f0d047;}
+    
+    
+    header{
+        width: 100%;
+        height: 138px;
+        background-color: brown;
+    }
+    
+    header > nav,
+    header > .logo{
+        display: none;
+    }
+    
+    section{margin-bottom: 85px;}
+    .faq{
+        width: 782px;
+    }
+    
+    .faqTop{
+        margin-top: 54px;       
+    }
+    
+    .faqTop > span{
+        float: left;
+        font-size: 48px;
+        border-bottom: 2px solid #f0d047;
+        margin-left: 258px;
+    }
+    
+    
+    .faqTop > .search{
+        display: inline-block;
+        padding: 14px;
+        margin-left: 180px;
+        margin-top: 52px;
+    }
+    .faqTop > .search >form > input{
+        width: 321px;
+        height: 44px;
+        padding: 0;
+        margin-right: 15px;
+    }
+    
+    .faqTop > .search >form ::placeholder{padding-left: 16px;}
+    
+    
+    .faqBot > .accordion{
+        margin-top: 30px;
+    }
+    
+    .faqBot > .accordion > div > p{
+        margin-left: 187px;
+        font-size: 14px;
+    }
+    
+    
+    span{
+        font-size: 16px;
+        margin: 0 111px 0 67px;
+        color: #252958;
+    }
+    
+    
+    input[id*="answer"]{
+        display: none;
+    }
+    input[id*="answer"] +label{
+        display: block;
+        padding: 20px;
+        border-bottom: 1px solid #232188;
+        cursor: pointer;
+        position: relative;
+    }
+    
+    input[id*="answer"] + label em{
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+        margin-top: -8px;
+        display: inline-block;
+        transition: 0.5s;
+        background:url(img/arrow.png) 0 0 no-repeat;
+    }
+    input[id*="answer"] + label + div{
+        max-height: 0;
+        transition: all 0.5s;
+        overflow: hidden;
+        background-color: #F0F0E4; 
+        font-size: 11px;
+    }
+    
+    input[id*="answer"] + label + div p{
+        display: inline-block;
+        padding: 20px;
+    }
+    
+    
+    input[id*="answer"]:checked + label + div{
+        max-height: 160px;
+    }
+    
+    input[id*="answer"]:checked + label em{
+        transition: 0.5s;
+        background:url(img/arrow_t.png) 0 0 no-repeat;
+    }
+    
+    .faqBot > .accordion > div > p> a:link{
+        color: #00204A;
+    }
+    .faqBot > .accordion > div > p> a:hover{
+        color: #f0d047;
+    }
+    
+    
+
+
+    footer{
+        width: 100%;
+        height: 128px;
+        background-color: #00204A;
+    }
+    footer >*{
+        display: none;
+    }
+}
+
+
+
 
