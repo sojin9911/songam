@@ -106,6 +106,8 @@ nav > .main_menu > li >a{
 }
 
 
+
+section{margin-bottom: 178px;}
 .faq{
     width: 1216px;
 }
@@ -170,10 +172,10 @@ input[id*="answer"] + label em{
     right: 10px;
     width: 30px;
     height: 30px;
-    margin-top: -15px;
+    margin-top: -8px;
     display: inline-block;
     transition: 0.5s;
-    background:url(../songam/img/arrow.png) 0 0 no-repeat;
+    background:url(img/arrow.png) 0 0 no-repeat;
 }
 input[id*="answer"] + label + div{
     max-height: 0;
@@ -190,15 +192,20 @@ input[id*="answer"] + label + div p{
 
 
 input[id*="answer"]:checked + label + div{
-    max-height: 100px;
+    max-height: 160px;
 }
 
 input[id*="answer"]:checked + label em{
     transition: 0.5s;
-    background:url(../songam/img/arrow_t.png) 0 0 no-repeat;
+    background:url(img/arrow_t.png) 0 0 no-repeat;
 }
 
-
+.faqBot > .accordion > div > p> a:link{
+    color: #00204A;
+}
+.faqBot > .accordion > div > p> a:hover{
+    color: #f0d047;
+}
 
 
 footer{
@@ -235,3 +242,7 @@ footer > .ft > .footerInfo > p{
 /* footer > .ft > .footerInfo> p:first-of-type{
     margin-left: 12px;
 }  */
+
+
+
+

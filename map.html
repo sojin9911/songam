@@ -4,20 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="map.css">
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <div class="login">
+                <ul>
+                    <li>로그인</li>
+                    <li>회원가입</li>
+                </ul>
+            </div>
+            <h1>
+                <a href="###">
+                    <img src="img/송암_na.png" alt="송암스페이스센터">
+                </a>
+            </h1>
+        </div>
+        
+        <nav>
+            <ul class="main_menu">
+                <li><a href="">소개</a>
+                    <ul class="sub_menu">
+                        <li><a href="">설립이념</a></li>
+                        <li><a href="">오시는 길</a></li>
+                    </ul>
+                </li>     
+                <li><a href="">이용안내</a>
+                    <ul class="sub_menu">
+                        <li><a href="">시설안내</a></li>
+                        <li><a href="">요금안내</a></li>
+                    </ul>
+                </li>
+                <li><a href="">단체 프로그램</a>
+                    <ul class="sub_menu">
+                        <li><a href="">유아 단체</a></li>
+                        <li><a href="">초등 단체</a></li>
+                        <li><a href="">중등 단체</a></li>
+                        <li><a href="">챌린저 러닝센터</a></li>
+                    </ul>
+                </li>
+                <li><a href="">커뮤니티</a>
+                    <ul class="sub_menu">
+                        <li><a href="">공지사항</a></li>
+                        <li><a href="">자주하는 질문</a></li>
+                        <li><a href="">천체 갤러리</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- header Fin -->
+
+
     <section class="map">
         <div class="mapInfo">
             <p>오시는 길</p>
-            <img src="" alt="지도">
-            <p>오시는 길</p>
+            <img src="http://placehold.it/1216x560" alt="지도">
+            <h3>오시는 길</h3>
             <p>승용차, 대중교통 이용</p>
+            <hr>
         </div>
 
         <div class="carUse">
-            <img src="../songam/img/car.png" alt="승용차">
-            <p>승용차 이용시</p>
+            <div class="carHead">
+                <img src="img/car.png" alt="승용차">
+                <p>승용차 이용시</p>
+            </div>
             <div class="carFirst">
                 <p>▶ 서울 지역</p>
                 <p>서울 구파발거리에서 북한산방면으로 우회전 후 371번 지방도로를 이용<br>
@@ -28,12 +83,16 @@
                 <p>▶ 외곽순환도로 지역</p>
                 <p>외곽순환도로 송추IC로 나와서 고양시 방면으로 좌회전 진행 후, <br>
                     장흥유원지 방면으로 "농협주유소"에서 우회전 '송암스페이스센터' 이정표를 따라 2Km쯤 석현교가 나오면 좌회전하여 진입</p>
-            </div>    
+            </div> 
+            
+            <hr> 
         </div>
 
         <div class="transUse">
-            <img src="../songam/img/train.png" alt="대중교통">
-            <p>대중교통 이용시</p>
+            <div class="transHead">
+                <img src="img/train.png" alt="대중교통">
+                <p>대중교통 이용시</p>
+            </div>
 
             <div class="transFirst">
                 <p>▶ 지하철 3호선 구파발역(1번 출구) 하차</p>
@@ -42,9 +101,24 @@
             <div class="transSecond">
                 <p>▶ 지하철 1호선 가능역(국철,1번 출구)하차</p>
                 <p>의정부 가능역(구 의정부 북부역)1번 출구로 나와 송추 방향 360번 버스 환승</p>
-                <p>+장흥농협 앞 하차 후 <span>택시 이용</span> (5~6분 소요) 추천</p>   
+                <p>+장흥농협 앞 하차 후 택시 이용 (5~6분 소요) 추천</p>   
             </div>
         </div>
     </section>
+
+
+    <footer>
+        <div class="ft">
+            <div class="ftBg">
+                <img src="img/송암_wh.png" alt="">
+            </div>
+            <div class="footerInfo">
+                <p>재단법인 송암스페이스센터</p>
+                <p>경기도 양주시 장흥면 권율로 185번길 103</p>
+                <p>TEL : 031-894-6000</p>
+                <p>FAX : 031-894-6004</p>
+            </div>
+        </div> 
+    </footer>
 </body>
 </html>
