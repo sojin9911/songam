@@ -249,6 +249,7 @@ footer > .ft > .footerInfo > p{
 @media screen and (min-width:834px) and (max-width:1023px){
     /* *{background-color: blueviolet;} */
 
+    *{margin: 0 auto; font-family: 'Noto Sans KR', sans-serif; list-style: none; -ms-overflow-style: none; } ::-webkit-scrollbar { display: none;}
     button{
         padding: 0;
         background-color: #00204A; color: #fff; border: none; font-size: 20px; width: 45px; height: 44px;}
