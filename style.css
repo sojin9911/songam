@@ -1,34 +1,35 @@
 *{margin: 0 auto; font-family: 'Noto Sans KR', sans-serif;}
 ul li{list-style: none;}
-body{margin: 0 ;}
-.yellow{color: #f0d047;}
+body{margin: 0 ; -ms-overflow-style: none; } ::-webkit-scrollbar { display: none;}
+
+
 .more_button{background-color: #252958; font-size: 16px; color: white; width: 67px; height: 35px; border: none; padding: 0;}
 .more_button:hover{background-color: white; color: #252958; transition: 0.5s;}
-.whButton{background-color:transparent; font-size: 16px; width: 67px; height: 35px; border: 1px solid #fff; color: #fff; }
+.whButton{background-color:transparent; font-size: 16px; width: 67px; line-height: 35px; border: 1px solid #fff; color: #fff; }
+.whButton:hover{background-color: #f0d047; border: none; transition: 0.5s;;}
 
-h1{font-size: 34px;}
-h2{font-size: 24px;}
-h3{font-size: 20px;}
-p{font-size: 16px;}
+
+h1{font-size: 34px; font-weight: normal;}
+h2{font-size: 24px; font-weight: normal;}
+h3{font-size: 20px; font-weight: normal;}
+p{font-size: 16px; }
 header{
     width: 100%;
     height: 186px;
-    background-color: yellow;
 }
 .logo{
     width: 1216px;
     height: 140px;
-    background-color: turquoise;
 }
 .login{
-    float: right;
-    height: 23px;
+    float: right;   
     font-size: 16px;
-    background-color: whitesmoke;
+    margin-top: 4px;
+    cursor: pointer;
 }
 .login > ul{
     list-style: none;
-    height: 23px;
+    height: 16px;
     
 }
 .login > ul > li{
@@ -54,9 +55,10 @@ header{
 
 
 nav{
-    background-color: tomato;
+    background-color: #11264f;
     height: 47px;
     width: 100%;
+    font-size: 20px;
     
 }
 nav > .main_menu{
@@ -91,7 +93,7 @@ nav > .main_menu > li >a{
     text-decoration: none;
     display: block;
     text-align: center;
-    background-color: wheat;
+    color: #fff;
 }
 
 .sub_menu > li > a{
@@ -112,17 +114,18 @@ nav > .main_menu > li >a{
 .main_banner{
     width: 100%;
     height: 647px;
-    background-color: coral;
+    background-image: url("img/main_banner.png");
     margin: auto;
 }
 
-.main_banner > p{
+.main_banner > h2{
     padding-top: 228px;
     text-align: center;
     font-size: 48px;    
     width: 100%;
     /* background-color: cyan; */
     float: left;
+    color: #fff;
 }
 
 
@@ -131,6 +134,8 @@ nav > .main_menu > li >a{
     /* background-color: darkgoldenrod; */
     height: 38px;
     width: 970px;
+    padding-left: 100px;
+    font-size: 20px;
     
 }
 
@@ -138,11 +143,572 @@ nav > .main_menu > li >a{
     float: left;
     margin-right: 20px;
     font-size: 20px;
-    
+    color: #fff;
 }
 
+.main_banner > .timeInfo > .yellow{color: #f0d047;}
+
+
 .main_banner >div{
-    background-color: darkgoldenrod;
+
     text-align: center;
     margin-top: 35px;
 }
+
+
+.wrap{
+    margin: 0 auto;
+}
+
+#first {
+    width: 1216px;
+    height: 640px;
+    margin: 50px auto 82px auto;
+}
+
+#first > article {
+    height: 640px;
+    float: left;
+}
+
+.observation{
+    width: 592px;
+
+}
+.observation > .tarWrap{
+    margin-top: 32px;
+}
+.observation > .tarWrap > .target{
+    width: 176px;
+    height: 260px;
+    float: left;
+    margin-right: 32px;
+    position: relative;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+}
+
+.observation > .tarWrap > .target:nth-child(1),
+.observation > .tarWrap > .target:nth-child(2),
+.observation > .tarWrap > .target:nth-child(3){
+    margin-bottom: 53px;
+}
+.observation > .tarWrap > .target:nth-child(3n){
+    margin-right: 0;
+}
+.observation > .tarWrap > .target > .name{
+    margin-top: 10px;
+    margin-left: 11px;
+}
+.observation > .tarWrap > .target >.name> span{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 6px;
+}
+
+.observation > .tarWrap > .target:nth-child(2) span,
+.observation > .tarWrap > .target:nth-child(3) span,
+.observation > .tarWrap > .target:nth-child(5) span
+{
+    font-size: 14px;
+    
+}
+.observation > .tarWrap > .target > p{
+    font-size: 12px;
+    margin-left: 10px;
+    padding-right:11px;
+    box-sizing: border-box;
+}
+.observation > .tarWrap > .target:first-child  p{
+    margin-top: 21px;
+}
+
+.observation > .tarWrap > .target:nth-child(2) p{
+    margin-top: 14px;
+}
+
+.observation > .tarWrap > .target:nth-child(3) p{
+    margin-top: 27px;
+}
+.observation > .tarWrap > .target:nth-child(4) p,
+.observation > .tarWrap > .target:nth-child(5) p,
+.observation > .tarWrap > .target:nth-child(6) p{
+    margin-top: 12px;
+}
+
+.observation > .tarWrap > .target:nth-child(5) p:last-of-type,
+.observation > .tarWrap > .target:nth-child(6) p:last-of-type{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+.observation > .tarWrap > .target > img:last-child{
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+
+
+/* 날짜 정보 */
+.today{
+    width: 486px;
+    margin-left: 136px;
+}
+
+
+.today > .weatherInfo {
+    width: 486px;
+    height: 581px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+    margin-top: 23px;
+    padding: 0 31px 0 35px;
+    box-sizing: border-box;
+}
+
+.today > .weatherInfo > p{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color: #11264f;
+}
+
+.topInfo{
+    width: 420px;
+    height: 236px;
+    margin-top: 28px;
+    margin-bottom: 14px;
+}
+.calendar{
+    width: 178px;
+    float: left;
+    margin-top: 30px;
+}
+
+.solar{ 
+    position: relative;
+    height: 72px;
+    margin-bottom: 18px;
+}
+
+/* 양력 */
+.solar > span:first-of-type{
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 8px;
+    margin-left: 34px;
+}
+.solar > span:last-of-type{
+    font-size: 18px;
+    font-weight: lighter;
+    position: absolute;    
+    top: 38px;
+    margin-left: 18px;
+}
+
+
+.lunar{
+    position: relative;
+    height: 72px;
+}
+
+.lunar > span:first-of-type{
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 8px;
+    margin-left: 34px;
+}
+.lunar > span:last-of-type{
+    font-size: 18px;
+    font-weight: lighter;
+    position: absolute;    
+    top: 38px;
+    margin-left: 18px;
+}
+
+/* 시민박명 */
+.twilight{
+    float: left;
+    width: 178px;
+    height: 236px;
+    margin-left: 64px;
+}
+.twilight > img {
+    width: 178px;
+    height: 174px;
+}
+
+.twilight div{
+    margin-top: -3px;
+}
+
+.twilight div span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.twilight div p {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.botInfo{
+    width: 420px;
+}
+/* 일출 */
+.botInfo >.sun{
+    float: left;
+    width: 178px;
+}
+
+.botInfo >.sun > .sunClock {
+    width: 177px;
+    height: 176px;
+    border-radius: 50%;
+    background-color: dodgerblue;
+    display: inline-block;
+}
+
+
+.botInfo > .sun p{
+    display: inline-block;
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+.botInfo > .sun span{
+    font-weight: bolder;
+    font-size: 16px;
+    margin-right: 59px;
+}
+
+.botInfo > .sun>.afternoon > span{
+    margin-right: 26px;
+}
+
+/* 월출 */
+.botInfo >.moon{
+    float: left;
+    margin-left: 64px;
+}
+.botInfo >.moon >.moonClock{
+    width: 178px;
+    height: 178px;
+    border-radius: 50%;
+    background-color: gainsboro;
+    margin-bottom: 10px;
+    
+}
+.botInfo >.moon span{
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 60px;
+    margin-top: -3px;
+}
+
+
+.botInfo >.moon p{
+    display: inline-block;
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+
+
+
+
+
+#second{
+    width: 1216px;
+    margin: 0 auto 82px auto;
+    height: 447px;
+}
+/* 뉴스레터 */
+
+.newsletter{
+    width: 592px;
+    float: left;
+}
+
+.newsletter > h2{
+    display: inline-block;
+}
+
+.newsletter > button {
+    float: right;
+}
+
+.newsletter > .newsPre {
+    margin-bottom: 40px;
+    margin-top: 32px;
+    height: 100px;
+    position: relative;
+}
+.newsletter > .newsPre:last-child{
+    margin-bottom: 0;
+}
+.newsletter > .newsPre> .leftSec,
+.newsletter > .newsPre> .rightSec{
+    display: inline-block;
+}
+.newsletter > .newsPre> .leftSec > img{
+    width: 160px;
+    height: 100px;
+}
+
+
+.newsletter > .newsPre> .rightSec{
+    width: 420px;
+    position: absolute;
+    top: 3px;
+    margin-left: 9px;
+}
+
+
+.newsletter > .newsPre> .rightSec > p{
+    display: inline-block;
+}
+
+
+.newsletter > .newsPre> .rightSec > p:first-child{
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.newsletter > .newsPre> .rightSec > p:last-child{
+    color: #818181;
+}
+
+
+
+/* 단체프로그램 */
+.orgPro{
+    width: 488px;
+    float: left;
+    margin-left: 136px;
+}
+
+
+.orgPro > .oneDay{
+    width: 488px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    height: 140px;
+    border-radius: 24px;
+    position: relative;
+    padding: 12px 25px 0 14px;
+    box-sizing: border-box;
+}
+
+.orgPro > .oneDay > img{
+    position: absolute;
+    float: left;
+    top: 13px;
+}
+/* 노답구간 */
+
+.orgPro > .oneDay >h2{
+    display: inline-block;
+    float: right;
+    color: #00204A;
+    margin-bottom: 5px;
+}
+.orgPro > .oneDay > p{
+    display: inline-block;
+    float: right;
+}
+
+
+.orgPro > .oneDay > .question{
+    width: 120px;
+    height: 24px;
+    display: inline-block;
+    margin: 90px 0 0 330px;
+    position: absolute;
+    
+}
+.orgPro > .oneDay > .question >img{
+    float: left;
+    margin-top: 4px;
+    margin-right: 3px;
+}
+.orgPro > .oneDay > .question > p{
+    display: inline-block;
+    float: right;
+    
+}
+
+
+.orgPro > ul{
+    padding: 0;
+}
+
+.orgPro > ul > li{
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.orgPro > ul > li:nth-child(2n-1){
+    margin-right: 16px;
+}
+
+.orgPro > ul > li:nth-child(3),
+.orgPro > ul > li:nth-child(4){
+    margin-bottom: 0;
+}
+.orgPro > ul > li >.participant{
+    width: 234px;
+    height: 125px;
+    margin: 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+    padding: 16px 21px;
+    box-sizing: border-box;
+}
+.orgPro > ul > li >.participant >h3{
+    color: #00204A;
+}
+
+.orgPro > ul > li >.participant >p{
+    color: #2b2b2b;
+}
+
+.orgPro > ul > li >.participant> .partibott {
+    margin-top: 16px;
+}
+.orgPro > ul > li >.participant> .partibott >h3:last-of-type{
+    display: inline-block;
+    color: #4f4f4f;
+}
+.orgPro > ul > li >.participant> .partibott >img{
+    float: right;
+    margin-top: 6px;
+}
+
+/* 천체 갤러리 */
+
+.gallery{
+    width: 1216px;
+    height: 241px;
+    margin-bottom: 82px;
+}
+
+.gallery > h2{
+    margin-bottom: 46px;
+    text-align: center;
+}
+
+.gallery > .orbImg{
+
+}
+.gallery > .orbImg > ul{
+    width: 1216px;
+    float: left;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+.gallery > .orbImg > ul > li > img{
+    width: 170px;
+    height: 160px;
+    margin-left: 10px;
+}
+
+
+.gallery > .orbImg > ul > .small >img{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 공지사항 */
+.notice{
+    width: 1216px;
+    margin-bottom: 237px;
+}
+
+.notice > h2{
+    display: inline-block;
+    margin-bottom: 51px;
+}
+
+.notice > button {
+    float: right;
+}
+
+.notice > .notiform >.notiwrap{
+    border-bottom: 1px solid #a5a5a5;
+}
+
+.notice > .notiform > .notiwrap >h3 {
+    display: inline-block;
+}
+
+
+.notice > .notiform > .notiwrap > div{
+    display: inline-block;
+    margin-left: 758px;
+    line-height: 48px;
+}
+
+
+.notice > .notiform >  .notiwrap >div > span:first-child{
+    margin-right: 26px;
+}
+
+
+
+
+
+
+
+/* 푸터 */
+footer{
+    width: 100%;
+    height: 171px;
+    background-color: #00204A;
+    color: #fff;
+}
+footer > .ft {
+    width: 1216px;
+
+    margin: auto;
+    padding-top: 54px;
+}
+
+
+footer > .ft> .ftBg >img{
+    width: 337px;
+    height: 63px;
+    float: left;
+}
+
+footer > .ft > .footerInfo {
+    padding-top: 22px;
+    width: 850px;
+    margin-right: 0;
+}
+
+footer > .ft > .footerInfo > p{
+    display: inline-block;
+    margin-right: 25px;
+}
+
+/* footer > .ft > .footerInfo> p:first-of-type{
+    margin-left: 12px;
+}  */
