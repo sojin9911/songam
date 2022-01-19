@@ -334,7 +334,7 @@ nav > .main_menu > li >a{
     background: #FFFFFF;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
     border-radius: 24px;
-    margin-top: 23px;
+    margin-top: 32px;
     padding: 0 31px 0 35px;
     box-sizing: border-box;
 }
@@ -625,15 +625,17 @@ nav > .main_menu > li >a{
 
 .orgPro > ul{
     padding: 0;
+    
 }
 
 .orgPro > ul > li{
     display: inline-block;
-    margin: 20px 0;
+    margin: 20px 0 0 0;
+    transition-duration: 0.5s;
 }
 .orgPro > ul > li:hover{
     transform: scale(1.1, 1.1);
-    transition-duration: 0.5s;
+    
 }
 .orgPro > ul > li:nth-child(2n-1){
     margin-right: 16px;
@@ -681,7 +683,8 @@ nav > .main_menu > li >a{
 /* 천체 갤러리 */
 
 .gallery{
-    width: 1216px;
+    width: 100%;
+    background-color: #9b5b5b;
     height: 241px;
     margin: 0 auto 82px auto;
     cursor: pointer;
@@ -691,36 +694,13 @@ nav > .main_menu > li >a{
     margin-bottom: 46px;
     text-align: center;
 }
-
-.gallery > .orbImg{
+.gallery > .orbImg {
+    overflow: hidden;
 
 }
-.gallery > .orbImg > ul{
-    width: 1216px;
+.gallery > .orbImg >ul >li{
     float: left;
-    display: flex;
-    align-items: center;
-    padding: 0;
 }
-.gallery > .orbImg > ul > li > img{
-    width: 170px;
-    height: 160px;
-    margin-left: 10px;
-}
-
-
-.gallery > .orbImg > ul > .small >img{
-    width: 40px;
-    height: 40px;
-}
-
-
-
-
-
-
-
-
 
 
 
@@ -733,7 +713,7 @@ nav > .main_menu > li >a{
 
 .notice > h2{
     display: inline-block;
-    margin-bottom: 51px;
+    margin-bottom: 32px;
 }
 
 .notice > button {
@@ -781,18 +761,30 @@ footer > .ft {
     margin: 0 auto;
     padding-top: 54px;
 }
-
-
-footer > .ft> .ftBg >img{
+footer > .ft> .ftBg{
+    float: left;
     width: 337px;
     height: 63px;
+    display: inline-block;
+}
+
+footer > .ft> .ftBg > svg{
+    width: 120px;
+    height: 63px;
     float: left;
+    vertical-align: bottom;
 }
-footer > .ft> .ftBg >img:last-child{
-    display: none;
+footer > .ft> .ftBg > svg .st0,
+footer > .ft> .ftBg > svg .st1{
+    fill: #fff;
 }
-
-
+footer > .ft> .ftBg >h3{
+    font-family: 'East Sea Dokdo', cursive;
+    display: inline-block;
+    font-size: 42px;
+    margin-top: 6px;
+    
+}
 footer > .ft > .footerInfo {
     float: left;
     padding-top: 22px;
@@ -980,10 +972,6 @@ footer > .ft > .footerInfo > p:nth-child(4){
         text-align: center;
     }
 
-    .observation > .tarWrap{
-        margin-top: 32px;
-    }
-
     .observation > .tarWrap > .target{
         width: 182px;
         height: 232px;
@@ -1018,14 +1006,6 @@ footer > .ft > .footerInfo > p:nth-child(4){
         text-align: center;
     }
 
-    .today > .weatherInfo {
-        width: 486px;
-        height: 581px;
-        background: #FFFFFF;
-        margin-top: 23px;
-        padding: 0 31px 0 35px;
-        box-sizing: border-box;
-    }
 
     .today > .weatherInfo > p{
         font-size: 22px;
@@ -1257,7 +1237,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
     }
     .orgPro >h2{
         display: block;
-        margin-bottom: 24px;
+        margin-bottom: 32px;
         text-align: center;
 
     }
@@ -1317,7 +1297,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
 
     .orgPro > ul > li{
         display: inline-block;
-        margin: 20px 0;
+        margin: 20px 0 0 0;
     }
 
     .orgPro > ul > li:nth-child(2n-1){
@@ -1438,16 +1418,18 @@ footer > .ft > .footerInfo > p:nth-child(4){
         margin: 0 auto;
     }
 
-
-    footer > .ft> .ftBg >img:last-child{
-        width: 183px;
-        height: 89px;
-        display: block;
-        /* margin-left: 80px; */
+    footer > .ft >.ftBg{
+        width: 170px;
     }
-    footer > .ft> .ftBg >img:first-child{
+    footer > .ft >.ftBg >svg{
+        width: 170px;
+        height: 100px;
+    }
+    footer > .ft >.ftBg > h3{
         display: none;
     }
+
+
     footer > .ft > .footerInfo {
         width: 504px;
         margin-left: 28px;
@@ -1572,15 +1554,28 @@ footer > .ft > .footerInfo > p:nth-child(4){
 
     .sidebar > ul{
         width: 100%;
-        background: burlywood;
     }
 
-    .sidebar > ul >li{background: cadetblue; line-height: 37px;}
-
-    .sidebar > ul > li >ul
-
+    .sidebar > ul >li{background: #11264f; line-height: 37px;}
     .sidebar > ul >li > a{
         font-size: 20px;
+        padding: 5px;
+    }
+    .sidebar > ul > li > a:link,
+    .sidebar > ul > li > a:visited{
+        text-decoration: none;
+        color: #fff;
+    }
+    .sidebar > ul > li> ul{
+        display: none;
+    }
+    .sidebar > ul > li:active > ul{
+        display: block;
+    }
+    .sidebar > ul > li > ul > li a:link,
+    .sidebar > ul > li > ul > li a:visited{
+        text-decoration: none;
+        color: #000;
     }
 
     .sidebar > .login{
@@ -1595,6 +1590,8 @@ footer > .ft > .footerInfo > p:nth-child(4){
     .sidebar > .login > p:first-child{
         border-right: 1px solid #000;
     }
+
+    
     .main_banner > h2,
     .main_banner > div:last-child{
         display: none;
@@ -1615,7 +1612,6 @@ footer > .ft > .footerInfo > p:nth-child(4){
         text-align: center;
     }
     .main_banner > .timeInfo > ul{
-        width: 400px;
         height: 13px;
         display: inline-block;
     }
@@ -1968,7 +1964,8 @@ footer > .ft > .footerInfo > p:nth-child(4){
         height: 0;
         padding: 0;
     }
-    .ft > .ftBg{display: none;}
+    footer > .ft > .ftBg {display: none;}
+
     .ft > .footerInfo >p:last-child{
         display: none;
     }
