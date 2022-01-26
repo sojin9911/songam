@@ -560,6 +560,10 @@ nav > .main_menu > li >a{
     color: #818181;
 }
 
+.newsletter > .newsPre:hover .rightSec{
+    color: #00305c;
+}
+
 
 
 /* 단체프로그램 */
@@ -684,23 +688,73 @@ nav > .main_menu > li >a{
 
 .gallery{
     width: 100%;
-    background-color: #9b5b5b;
-    height: 241px;
+    height: 300px;
     margin: 0 auto 82px auto;
     cursor: pointer;
 }
 
 .gallery > h2{
     margin-bottom: 46px;
-    text-align: center;
+    display: inline-block;
 }
-.gallery > .orbImg {
-    overflow: hidden;
+.gallery > button{
+    float: right;
+}
 
+.orbWrap{
+    display: flex;
 }
-.gallery > .orbImg >ul >li{
-    float: left;
+.orbWrap > .orb{
+    width: 25%;
+    height: 220px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
 }
+
+.orbWrap > .orb:hover img{
+    opacity: 0.8;
+}
+.orbWrap > .orb:hover .orbTop{
+    bottom: 52%;
+}
+.orbWrap > .orb:hover .bottom{
+    top: 52%;
+}
+
+.orbWrap > .orb > .orbTop {
+    position: absolute;
+    bottom: 150%;
+    left: 30px;
+    z-index: 2;
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    transition: 0.35s;
+}
+
+.orbWrap > .orb > .bottom {
+    position: absolute;
+    top: 150%;
+    left: 30px;
+    z-index: 2;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.35s;
+}
+.orbWrap > .orb >img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
 
 
 
@@ -872,29 +926,35 @@ footer > .ft > .footerInfo > p:nth-child(4){
 
 
 
-    .main_menu > li > ul {
+    /* .main_menu > li > ul {
         width: 182px;
         position: absolute;
         display: none;
-    }
-    .main_menu > li:active > ul {
+    } */
+    /* .main_menu > li:active > ul {
         background-color: #fff;
         display: block;
-    }
+    } */
     .main_menu > li > ul > li > a{
         color: #2b2b2b;
         font-size: 14px;
         line-height: 32px;
     }
 
-    .main_menu > li > ul > li:active{
-        background-color: #f0d047;
+    .main_menu > li > ul{
+        display: block;
+        width: 182px;
+        height: 0;
+        overflow: hidden;
+        transition: 0.7s;
     }
-    .main_menu > li > ul > li > a:active{
-        color: #fff;
-
+    nav > ul > .active > ul {
+        background-color: #fff;
+        /* color: #000; */
+        height: auto;
     }
 
+    
     .guard {
         width: 0;
         height: 138px;
@@ -1164,6 +1224,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
 
     #second{
         width: 782px;
+        height: 1015px;
         margin: 56px auto;
     }
 
@@ -1340,9 +1401,9 @@ footer > .ft > .footerInfo > p:nth-child(4){
     /* 천체 갤러리 */
 
     .gallery{
-        width: 742px;
-        height: 173px;
-        margin: 606px auto 56px auto;
+        width: 100%;
+        height: 200px;
+        margin: 56px auto 56px auto;
     }
 
     .gallery > h2{
@@ -1350,27 +1411,10 @@ footer > .ft > .footerInfo > p:nth-child(4){
         text-align: center;
     }
 
-    .gallery > .orbImg{
-
+    .gallery > .orbWrap >.orb{
+        height: 130px;
     }
-    .gallery > .orbImg > ul{
-        width: 742px;
-    }
-    .gallery > .orbImg > ul > li > img{
-        width: 115.36px;
-        height: 102px;
-        margin-left: 10px;
-    }
-    .gallery > .orbImg > ul > li:nth-child(5) img{
-        display: none;
-        background-color: yellow;
-    }
-
-    .gallery > .orbImg > ul > .small >img{
-        width: 40px;
-        height: 40px;
-    }
-
+   
 
 
 
@@ -1537,7 +1581,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
 
     input[id="menuicon"]:checked + label span {
         background:#11264F;
-    }
+    } 
     .sidebar{
         width: 260px;
         height: 100%;
@@ -1567,10 +1611,14 @@ footer > .ft > .footerInfo > p:nth-child(4){
         color: #fff;
     }
     .sidebar > ul > li> ul{
-        display: none;
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s;
     }
-    .sidebar > ul > li:active > ul{
-        display: block;
+    .sidebar > ul > .active > ul{
+        background-color: #ffffff;
+        /* color: #000; */
+        height: 150px;
     }
     .sidebar > ul > li > ul > li a:link,
     .sidebar > ul > li > ul > li a:visited{
@@ -1578,6 +1626,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
         color: #000;
     }
 
+        
     .sidebar > .login{
         width: 100%;
         margin-top: 80px;
@@ -1618,10 +1667,13 @@ footer > .ft > .footerInfo > p:nth-child(4){
     .main_banner > .timeInfo > ul > li{
         color: #fff;
         font-size: 9px;
-        margin-right: 7px;
+        margin-right: 5px;
     }
     .main_banner > .timeInfo > ul > li:first-child{
         display: none;
+    }
+    .main_banner > .timeInfo > ul > li:last-child{
+        margin-right: 0;
     }
 
     .wrap{
@@ -1909,19 +1961,30 @@ footer > .ft > .footerInfo > p:nth-child(4){
         height: 13px;
     }
 
+
     .gallery{
-        width: 328px;
-        height: 115px;
+        width: 100%;
+        height: 130px;
         margin: 0 auto 68px auto;
     }
-   
-    .gallery > .orbImg > ul > li > img{
-        width: 76.76px;
-        height: 68px;
-        margin-left: 9px;
+    .gallery > h2{
+        margin-bottom: 24px;
     }
-    .gallery > .orbImg > ul > li:nth-child(n+5):nth-child(-n+7){
-        display: none;
+    .orbWrap > .orb{
+        height: 80px;
+        padding: 0;
+    }
+    .orbWrap > .orb:not(:last-child){
+        margin-right: 5px;
+    }
+
+    .orbWrap > .orb > .orbTop{
+        font-size: 13px;
+        left: 10px;
+    }
+    .orbWrap > .orb > .bottom{
+        font-size: 10px;
+        left: 10px;
     }
 
 

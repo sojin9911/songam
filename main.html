@@ -18,7 +18,7 @@
                     </ul>
                 </div>
                 <div class="logo">
-                    <a href="###">
+                    <a href="main.html">
                         <div class="realLogo">
                             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
@@ -59,19 +59,19 @@
                     </label>
                     <div class="sidebar">
                         <ul>
-                            <li><a href="###">소개</a>
+                            <li class="mobile-menu"><a href="###">소개</a>
                                 <ul>
                                     <li><a href="">설립이념</a></li>
                                     <li><a href="">오시는 길</a></li>
                                 </ul>
                             </li>
-                            <li><a href="###">이용안내</a>
+                            <li class="mobile-menu"><a href="###">이용안내</a>
                                 <ul>
                                     <li><a href="">시설안내</a></li>
                                     <li><a href="">요금안내</a></li>
                                 </ul>
                             </li>
-                            <li><a href="###">단체프로그램</a>
+                            <li class="mobile-menu"><a href="###">단체프로그램</a>
                                 <ul>
                                     <li><a href="">유아 단체</a></li>
                                     <li><a href="">초등 단체</a></li>
@@ -79,10 +79,10 @@
                                     <li><a href="">챌린저 러닝센터</a></li>
                                 </ul>
                             </li>
-                            <li><a href="###">커뮤니티</a>
+                            <li class="mobile-menu"><a href="###">커뮤니티</a>
                                 <ul>
                                     <li><a href="">공지사항</a></li>
-                                    <li><a href="">자주하는 질문</a></li>
+                                    <li><a href="faq.html">자주하는 질문</a></li>
                                     <li><a href="">천체 갤러리</a></li>
                                 </ul>
                             </li>
@@ -96,19 +96,19 @@
             </div>
             <nav>
                 <ul class="main_menu">
-                    <li><a href="">소개</a>
+                    <li class="tablet-menu"><a href="###">소개</a>
                         <ul class="sub_menu">
                             <li><a href="">설립이념</a></li>
                             <li><a href="">오시는 길</a></li>
                         </ul>
                     </li>     
-                    <li><a href="">이용안내</a>
+                    <li class="tablet-menu"><a href="###">이용안내</a>
                         <ul class="sub_menu">
                             <li><a href="">시설안내</a></li>
                             <li><a href="">요금안내</a></li>
                         </ul>
                     </li>
-                    <li><a href="">단체 프로그램</a>
+                    <li class="tablet-menu"><a href="###">단체 프로그램</a>
                         <ul class="sub_menu">
                             <li><a href="">유아 단체</a></li>
                             <li><a href="">초등 단체</a></li>
@@ -116,10 +116,10 @@
                             <li><a href="">챌린저 러닝센터</a></li>
                         </ul>
                     </li>
-                    <li><a href="">커뮤니티</a>
+                    <li class="tablet-menu"><a href="###">커뮤니티</a>
                         <ul class="sub_menu">
                             <li><a href="">공지사항</a></li>
-                            <li><a href="">자주하는 질문</a></li>
+                            <li><a href="faq.html">자주하는 질문</a></li>
                             <li><a href="">천체 갤러리</a></li>
                         </ul>
                     </li>
@@ -411,7 +411,9 @@
             
             <section class="gallery">
                 <h2>천체 갤러리</h2>
-                <div class="orbImg">
+                <button class="more_button">MORE</button>
+                <div class="orbWrap">
+                    <!-- translateX(-100%->대충 widht 계산) -->
                     <!-- <ul>
                         <li class="small"><img src="img/arrowLeft.png" alt="천체갤러리"></li>
                         <li><img src="img/orb1.png" alt="천체갤러리"></li>
@@ -422,6 +424,26 @@
                         <li><img src="img/orb6.png" alt="천체갤러리"></li> 
                         <li class="small"><img src="img/arrowRight.png" alt="천체갤러리"></li>
                     </ul> -->
+                    <div class="orb">
+                        <div class="orbTop">목성</div>
+                        <div class="bottom">태양계 중 가장 큰 행성</div>
+                        <img src="img/orb1.png" alt="">
+                    </div>
+                    <div class="orb">
+                        <div class="orbTop">토성</div>
+                        <div class="bottom">고리가 있는 행성</div>
+                        <img src="img/orb2.png" alt="">
+                    </div>
+                    <div class="orb">
+                        <div class="orbTop">천왕성</div>
+                        <div class="bottom">망원경으로 발견한 최초 행성</div>
+                        <img src="img/orb6.png" alt="">
+                    </div>
+                    <div class="orb">
+                        <div class="orbTop">해왕성</div>
+                        <div class="bottom">거대 얼음 행성</div>
+                        <img src="img/orb7.png" alt="">
+                    </div>
                 </div>
             </section>
 
@@ -512,8 +534,55 @@
                 <p>경기도 양주시 장흥면 권율로 185번길 103</p>
                 <p>TEL : 031-894-6000</p>
                 <p>FAX : 031-894-6004</p>
+
             </div>
         </div> 
     </footer>
+    <script>
+
+        let mobileMenu = document.querySelectorAll('.mobile-menu');
+        let tabletMenu = document.querySelectorAll('.tablet-menu');
+        let mobileIndex =0;
+        let tabletIndex = 0;
+          
+        for (let i=0; i < mobileMenu.length; i++) {
+            mobileMenu[i].addEventListener('click', ()=> {
+                mobileMenu[mobileIndex].classList.remove('active');
+                mobileMenu[i].classList.add('active');
+                mobileIndex = i;
+            });
+            tabletMenu[i].addEventListener('click', ()=> {
+                console.log(i,"누름")
+                tabletMenu[tabletIndex].classList.remove('active');
+                tabletMenu[i].classList.add('active');
+                tabletIndex = i;
+            });
+        }
+        
+
+        const sun = document.querySelector('.sunClock');
+        let start = new Date("2021-12-31 07:34:00");
+        let end = new Date("2021-12-31 17:17:00");
+        let stT =start.getHours()*60 + start.getMinutes();
+        let enT =end.getHours()*60 + end.getMinutes();
+
+        let startAngle = stT/4;
+        let endAngle = enT/4;
+
+        sun.style.backgroundImage="conic-gradient(#11264f " + startAngle + "deg, #ff7473 0 " + endAngle + "deg, #11264f 0)";
+
+
+        const moon = document.querySelector('.moonClock');
+        let mori = new Date("2021-12-31 00:59:00");
+        let mose = new Date("2021-12-31 13:01:00");
+        let moriT =mori.getHours()*60 + mori.getMinutes();
+        let moseT =mose.getHours()*60 + mose.getMinutes();
+
+        let moriAngle = moriT/4;
+        let moseAngle = moseT/4;
+
+        moon.style.backgroundImage="conic-gradient(#11264f " + moriT + "deg, #f0d047 0 " + moseAngle + "deg, #11264f 0)";
+
+        </script>
 </body>
 </html>

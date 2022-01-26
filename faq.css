@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Noto+Sans+KR:wght@400;500;700&display=swap');
 *{
     margin: 0; 
     padding:0;
-    font-family: 'Noto Sans KR', sans-serif; list-style: none; -ms-overflow-style: none; } ::-webkit-scrollbar { display: none;}
+    font-family: 'Noto Sans KR', sans-serif; list-style: none; 
+    -ms-overflow-style: none; } 
+    ::-webkit-scrollbar { display: none;}
 
 button{
     padding: 0;
@@ -12,27 +16,31 @@ p{font-size: 16px;}
 .yellow{color: #f0d047;}
 
 
-header{
-    width: 100%;
-    height: 186px;
-    position:fixed;
+@media screen and (min-width: 1365px) {
+    header{
+        width: 100%;
+        height: 186px;
+        position:fixed;
+        background-color: #fff;
+        z-index: 2;
+    }
+    .headtop{
+        width: 1216px;
+        height: 140px;
+        margin: 0 auto;
+    }
 }
-.logo{
-    width: 1216px;
-    height: 140px;
-    margin: 0 auto;
-}
-
 .login{
+
     float: right;   
     font-size: 16px;
     margin-top: 4px;
     cursor: pointer;
+    
 }
 .login > ul{
     list-style: none;
-    height: 16px;
-    float: right;
+    height: 16px
     
 }
 .login > ul > li{
@@ -43,22 +51,42 @@ header{
 .login > ul > li:first-child{   
     border-right:1px solid black;
 } 
- 
+.headtop > .logo{
+    width: 100%;
+} 
 
-.logo > h1{
+.headtop > .logo > a{
+    margin-top: 4px;
+    width: 100%;
+}
+.headtop > .logo > a >.realLogo {
+    text-align: center;
+    width: 50%;
     margin: auto;
-    width: 409px;
-    height: 77px;
-    padding: 22px 0 0 0;
-}
-.logo > h1 > a> img{
-    width: 409px;
-    height: 77px;
-}
-.logo > h1 > a> img:last-child{
-    display: none;
+    padding-top: 2%;
+    box-sizing: border-box;
+    height: 138px;
 }
 
+.headtop > .logo > a:link,
+.headtop > .logo > a:visited,
+.headtop > .logo > a:hover{
+    color: #11264f;
+    text-decoration: none;
+}
+.headtop > .logo > a > .realLogo > svg{
+    width: 100px;
+    height: 90px;
+    vertical-align: bottom;
+    margin-right:20px ;
+}
+.headtop > .logo > a > .realLogo > h1{
+    font-family: 'East Sea Dokdo', cursive;
+    display: inline-block;
+    font-size: 70px;
+    font-weight: normal;
+}
+.top{display: none;}
 nav{
     background-color: #11264f;
     height: 47px;
@@ -126,7 +154,10 @@ nav > .main_menu > li >a{
 }
 
 
-
+.guard {
+    width: 0;
+    height: 186px;
+  }
 section{margin-bottom: 178px;}
 .faq{
     width: 1216px;
@@ -237,27 +268,50 @@ footer{
 }
 footer > .ft {
     width: 1216px;
-
-    margin: auto;
+    margin: 0 auto;
     padding-top: 54px;
 }
-
-
-footer > .ft> .ftBg >img{
+footer > .ft> .ftBg{
+    float: left;
     width: 337px;
     height: 63px;
-    float: left;
+    display: inline-block;
 }
 
+footer > .ft> .ftBg > svg{
+    width: 120px;
+    height: 63px;
+    float: left;
+    vertical-align: bottom;
+}
+footer > .ft> .ftBg > svg .st0,
+footer > .ft> .ftBg > svg .st1{
+    fill: #fff;
+}
+footer > .ft> .ftBg >h3{
+    font-family: 'East Sea Dokdo', cursive;
+    display: inline-block;
+    font-size: 42px;
+    margin-top: 6px;
+    font-weight: normal;
+    
+}
 footer > .ft > .footerInfo {
+    float: left;
     padding-top: 22px;
-    width: 850px;
-    margin-right: 0;
+    width: 840px;
+    margin-left:  37px;
 }
 
 footer > .ft > .footerInfo > p{
+    margin-right: 30px;
     display: inline-block;
-    margin-right: 25px;
+}
+footer > .ft > .footerInfo > p:nth-child(2){
+    margin-right: 33px;
+}
+footer > .ft > .footerInfo > p:nth-child(4){
+    margin-right: 0;
 }
 
 /* footer > .ft > .footerInfo> p:first-of-type{
@@ -267,7 +321,7 @@ footer > .ft > .footerInfo > p{
 
 
 /* ////////////태블릿 시작//////////// */
-@media screen and (min-width:834px) and (max-width:1024px){
+@media screen and (min-width:834px) and (max-width:1365px){
     /* *{background-color: blueviolet;} */
 
     button{
@@ -283,32 +337,18 @@ footer > .ft > .footerInfo > p{
         width: 100%;
         height: 138px;
         position:fixed;
+        z-index: 2;
         background-color: #fff;
     }
 
-    .logo{
-        width: 834px;
+    .headtop > .logo > a >.realLogo {
         height: 103px;
-        margin: 0 auto;
-    }
+        padding-top: 0;
 
-    .logo > .login > ul > li >a{
-        text-decoration: none;
-        display: block;
-        text-align: center;
-        color: #000;
-        font-size: 12px;
     }
-    .logo > h1{
-        width: 293px;
-        height: 54px;
-        text-align: center;
+    .headtop > .logo > a >.realLogo >h1{
+        font-size: 56px;
     }
-    .logo > h1 > a> img {
-        width: 293px;
-        height: 54px;
-    }
-
     nav {
         height: 35px;
         width: 100%;
@@ -336,27 +376,32 @@ footer > .ft > .footerInfo > p{
 
 
 
-    .main_menu > li > ul {
+    /* .main_menu > li > ul {
         width: 182px;
         position: absolute;
         display: none;
-    }
-    .main_menu > li:active > ul {
+    } */
+    /* .main_menu > li:active > ul {
         background-color: #fff;
         display: block;
-    }
+    } */
     .main_menu > li > ul > li > a{
         color: #2b2b2b;
         font-size: 14px;
         line-height: 32px;
     }
 
-    .main_menu > li > ul > li:active{
-        background-color: #f0d047;
+    .main_menu > li > ul{
+        display: block;
+        width: 182px;
+        height: 0;
+        overflow: hidden;
+        transition: 10.2s;
     }
-    .main_menu > li > ul > li > a:active{
-        color: #fff;
-
+    nav > ul > .active > ul {
+        background-color: #fff;
+        /* color: #000; */
+        height: 100px;
     }
 
 
@@ -481,25 +526,24 @@ footer > .ft > .footerInfo > p{
         margin: 0 auto;
     }
 
-
-    footer > .ft> .ftBg >img:last-child{
-        width: 183px;
-        height: 89px;
-        float: left;
-        display: block;
-        /* margin-left: 80px; */
+    footer > .ft >.ftBg{
+        width: 170px;
     }
-    footer > .ft> .ftBg >img:first-child{
+    footer > .ft >.ftBg >svg{
+        width: 170px;
+        height: 100px;
+    }
+    footer > .ft >.ftBg > h3{
         display: none;
     }
+
+
     footer > .ft > .footerInfo {
-        float: left;
         width: 504px;
         margin-left: 28px;
     }
 
     footer > .ft > .footerInfo > p{
-        display: inline-block;
         margin-right: 36px;
     }
     footer > .ft > .footerInfo > p:nth-child(2n){
@@ -515,79 +559,208 @@ footer > .ft > .footerInfo > p{
 
 
 /* ////////////모바일 시작//////////// */
-@media screen and (min-width:360px) and (max-width:834px){
+@media screen and (min-width:360px) and (max-width:833px){
     button{
         width: 52px;
         height: 44px;
         font-size: 20px;
     }
-    header {
-        width: 100%;
-        height: 92px;
-        background-color: #11264f;
-    }
-    .logo >.login{
-        display: none; /*로그인*/
-    }
-    .logo > h1 > a > img:first-child{
+    header > .headtop >.login,
+    header > nav{
         display: none;
     }
-    .logo{
-        width: 100%;
-        margin: 0 auto;
-        height: 92px;
+    header{
+        background-color: #11264F; 
+        position: fixed; 
+        width: 100%; 
+        height: 92px; 
+        z-index: 2;
     }
-    nav{display: none;}
+    .headtop{position: relative;}
+    .headtop > .logo > a > .realLogo{
+        height: 92px;
+        padding-top: 28px;
+        width: 70%;
+    }
+    .headtop > .logo > a > .realLogo > svg {
+        width: 40px;
+        height: 40px;
+    }
+    svg >.st0{fill:#fff;}
+	svg >.st1{fill:#fff;}
 
-    .faq{
+    .headtop > .logo > a > .realLogo > h1{
+        font-size: 24px;
+        font-weight: normal;
+        color: #fff;
+    }
+
+    .top{display: block; position: absolute; top: 30px; right: 20px;}
+
+    input[id="menuicon"]{
+        display: none;
+    }
+    input[id="menuicon"] + label{
+        display: inline-block;
+        width: 16px;
+        height: 10px;
+        position: relative;
+        cursor: pointer;
+        /* float: right; */
+    }
+    
+    input[id="menuicon"] + label span{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        border-radius: 30px;
+        background: #fff;
+        transition:all .35s;
+        margin: 0;
+    }
+
+    input[id="menuicon"] + label span:nth-child(1){
+        top: 0;
+    }
+    input[id="menuicon"] + label span:nth-child(2){
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    input[id="menuicon"] +label span:nth-child(3){
+        bottom: 0;
+    }
+
+    input[id="menuicon"]:checked + label span:nth-child(1){
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+    }
+    input[id="menuicon"]:checked + label span:nth-child(2){
+        opacity: 0;
+    }
+    input[id="menuicon"]:checked + label span:nth-child(3){
+        bottom: 50%;
+        transform: translateY(50%) rotate(-45deg);
+    }
+
+    input[id="menuicon"]:checked + label {
+        z-index:2;
+    }
+
+    input[id="menuicon"]:checked + label span {
+        background:#11264F;
+    } 
+    .sidebar{
+        width: 260px;
+        height: 100%;
+        background: #fff;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        z-index: 1;
+        transition: all .35s;
+        padding-top: 80px;
+        box-sizing: border-box;
+    }
+    input[id="menuicon"]:checked + label + div {right: 0;}
+
+    .sidebar > ul{
+        width: 100%;
+    }
+
+    .sidebar > ul >li{background: #11264f; line-height: 37px;}
+    .sidebar > ul >li > a{
+        font-size: 20px;
+        padding: 5px;
+    }
+    .sidebar > ul > li > a:link,
+    .sidebar > ul > li > a:visited{
+        text-decoration: none;
+        color: #fff;
+    }
+    .sidebar > ul > li> ul{
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .sidebar > ul > .active > ul{
+        background-color: #ffffff;
+        /* color: #000; */
+        height: 150px;
+    }
+    .sidebar > ul > li > ul > li a:link,
+    .sidebar > ul > li > ul > li a:visited{
+        text-decoration: none;
+        color: #000;
+    }
+
+        
+    .sidebar > .login{
+        width: 100%;
+        margin-top: 80px;
+        text-align: center;
+    }
+    .sidebar > .login > p{
+        display: inline-block;
+        padding: 0 9px;
+    }
+    .sidebar > .login > p:first-child{
+        border-right: 1px solid #000;
+    }
+
+    
+    .main_banner > h2,
+    .main_banner > div:last-child{
+        display: none;
+    }
+    .guard {
+        width: 0;
+        height: 92px;
+      }
+
+
+
+    .faq {
         width: 328px;
     }
-    .faq > .faqTop >span{
-        display: none;
+
+    .faq > .faqTop{
+        width: 100%;
+        margin-top: 27px;
+    }
+    .faq > .faqTop > span{
+        width: 104px;
+        font-size: 18px;
+        margin-bottom: 27px;
+        margin-left: 110px;
     }
 
-    .faq > .faqTop >.search{
+    .faqTop > .search {
         width: 100%;
-        height: 44px;
         margin: 0;
         padding: 0;
     }
     .faqTop > .search >form > input{
         width: 270px;
-        margin-right: 2px;
+        height: 44px;
         box-sizing: border-box;
+        margin-right: 0;
     }
 
-    .faqBot{
-        width: 328px;
-    }
 
-    input[id*="answer"] +label {
-        padding: 0;
-        font-size: 14px;
-        line-height: 42px;
-    }
-    input[id*="answer"] +label em{
-        display: none;
-    }
     span{
-        font-size: 24px;
-        margin: 0 20px 0 2px;
+        margin: 0 20px 0 0;
+        padding: 0;
+    }
+    .faqBot > .accordion {
+        font-size: 12px;
+        margin-top: 27px;
     }
 
-
-    input[id*="answer"] + label + div{
-        
+    .faqBot > .accordion > div > p{
+        font-size: 10px;
+        margin: 0;
     }
-
-    .faqBot >.accordion > div > p{
-        margin-left: 0;
-        font-size: 9px;
-    }
-
-
-
-
     
     footer{
         width: 100%; 
@@ -598,7 +771,8 @@ footer > .ft > .footerInfo > p{
          height: 0;
          padding: 0;
      }
-     .ft > .ftBg{display: none;}
+     footer > .ft > .ftBg {display: none;}
+ 
      .ft > .footerInfo >p:last-child{
          display: none;
      }
