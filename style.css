@@ -14,7 +14,7 @@ body{margin: 0 ; -ms-overflow-style: none; }::-webkit-scrollbar { display: none;
 .more_button{background-color: #252958; font-size: 16px; color: white; width: 67px; height: 35px; border: none; padding: 0;}
 .more_button:hover{background-color: white; color: #252958; transition: 0.5s;}
 .whButton{background-color:transparent; font-size: 16px; width: 67px; line-height: 35px; border: 1px solid #fff; color: #fff; }
-.whButton:hover{background-color: #f0d047; border: none; transition: 0.5s;;}
+.whButton:hover{background-color: #f0d047; border: 1px solid #f0d047; transition: 0.5s;;}
 
 
 h1{font-size: 34px; font-weight: normal;}
@@ -61,7 +61,34 @@ header{
     width: 100%;
 } 
 
-.headtop > .logo > a{
+.logo > .realLogo > h1 > a > svg{
+    width: 100px;
+    height: 90px;
+    vertical-align: bottom;
+    margin-right:20px ;
+}
+
+.logo > .realLogo > h1 > a:link,
+.logo > .realLogo > h1 > a:visited,
+.logo > .realLogo > h1 > a:hover{
+    color: #11264f;
+    text-decoration: none;
+}
+.logo > .realLogo> h1{
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+.logo > .realLogo> h1 > a{
+    font-family: 'East Sea Dokdo', cursive;
+    display: inline-block;
+    font-size: 70px;
+}
+
+
+
+/* .headtop > .logo > a{
     margin-top: 4px;
     width: 100%;
 }
@@ -90,7 +117,12 @@ header{
     font-family: 'East Sea Dokdo', cursive;
     display: inline-block;
     font-size: 70px;
-}
+} */
+
+
+
+
+
 .top{display: none;}
 nav{
     background-color: #11264f;
@@ -244,6 +276,7 @@ nav > .main_menu > li >a{
 
 .observation > .tarWrap > .target:hover{
     transform: scale(1.2, 1.2);
+    box-shadow: 0px 58px 58px rgba(0, 0, 0, 0.25);
 }
 
 .observation > .tarWrap > .target:nth-child(1),
@@ -615,12 +648,15 @@ nav > .main_menu > li >a{
     position: absolute;
     
 }
-.orgPro > .oneDay > .question >img{
+.orgPro > .oneDay > .question > a:link {
+    color: #00204A;
+}
+.orgPro > .oneDay > .question > a > img{
     float: left;
     margin-top: 4px;
     margin-right: 3px;
 }
-.orgPro > .oneDay > .question > p{
+.orgPro > .oneDay > .question > a > p{
     display: inline-block;
     float: right;
     
@@ -657,6 +693,9 @@ nav > .main_menu > li >a{
     border-radius: 24px;
     padding: 16px 21px;
     box-sizing: border-box;
+}
+.orgPro > ul > li >.participant:hover{
+    box-shadow: 0px 44px 50px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -762,7 +801,6 @@ nav > .main_menu > li >a{
 .notice{
     width: 1216px;
     margin:0 auto 237px auto;
-    cursor: pointer;
 }
 
 .notice > h2{
@@ -776,19 +814,20 @@ nav > .main_menu > li >a{
 
 .notice > .notiform >.notiwrap{
     border-bottom: 1px solid #a5a5a5;
+    cursor: pointer;
 }
 
 .notice > .notiform >.notiwrap:hover{
     color: #555555;
 }
-.notice > .notiform > .notiwrap >h3 {
+.notice > .notiform > .notiwrap >p {
     display: inline-block;
 }
 
 
 .notice > .notiform > .notiwrap > div{
     display: inline-block;
-    margin-left: 758px;
+    margin-left: 800px;
     line-height: 48px;
 }
 
@@ -846,9 +885,13 @@ footer > .ft > .footerInfo {
     margin-left:  37px;
 }
 
-footer > .ft > .footerInfo > p{
+footer > .ft > .footerInfo  p{
     margin-right: 30px;
     display: inline-block;
+}
+footer > .ft > .footerInfo a:link{
+    color: #fff;
+    text-decoration: none;
 }
 footer > .ft > .footerInfo > p:nth-child(2){
     margin-right: 33px;
@@ -891,12 +934,16 @@ footer > .ft > .footerInfo > p:nth-child(4){
         background-color: #fff;
     }
 
-    .headtop > .logo > a >.realLogo {
+    .headtop > .logo >.realLogo {
         height: 103px;
         padding-top: 0;
 
     }
-    .headtop > .logo > a >.realLogo >h1{
+    .logo >.realLogo > h1{
+        padding-top: 0;
+        width: 403px;
+    }
+    .logo >.realLogo > h1 > a{
         font-size: 56px;
     }
     nav {
@@ -962,6 +1009,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
     .main_banner{
         width: 100%;
         height: 350px;
+        background-position: center;
         background-image: url("img/main_banner.png");
         margin: auto;
     }
@@ -971,7 +1019,6 @@ footer > .ft > .footerInfo > p:nth-child(4){
         text-align: center;
         font-size: 32px;    
         width: 100%;
-        /* background-color: cyan; */
         float: left;
         color: #fff;
     }
@@ -979,10 +1026,8 @@ footer > .ft > .footerInfo > p:nth-child(4){
 
     .main_banner > .timeInfo{
         padding-top: 236px;
-        /* background-color: darkgoldenrod; */
         height: 38px;
         width: 569px;
-        /* padding-left: 139px; */
         text-align: center;
         margin-top: 0;
         
@@ -1055,6 +1100,12 @@ footer > .ft > .footerInfo > p:nth-child(4){
         height: 116px;
 
     }
+    .observation > .tarWrap > .target:nth-child(5) p:last-of-type, 
+    .observation > .tarWrap > .target:nth-child(6) p:last-of-type{
+        margin-top: 5px;
+    }
+
+
     /* 날짜 정보 */
     .today{
         width: 486px;
@@ -1430,12 +1481,9 @@ footer > .ft > .footerInfo > p:nth-child(4){
         width: 782px;
         margin-bottom: 237px;
     }
-    .notice > .notiform > .notiwrap >h3 {
-        font-size: 16px;
-    }
 
     .notice > .notiform > .notiwrap > div{
-        margin-left: 349px;
+        margin-left: 380px;
     }
 
     .notice > .notiform >  .notiwrap >div > span:first-child{
@@ -1510,19 +1558,23 @@ footer > .ft > .footerInfo > p:nth-child(4){
         z-index: 2;
     }
     .headtop{position: relative;}
-    .headtop > .logo > a > .realLogo{
+    .headtop > .logo > .realLogo{
         height: 92px;
-        padding-top: 28px;
+        /* padding-top: 28px; */
         width: 70%;
+        margin: 0 auto;
     }
-    .headtop > .logo > a > .realLogo > svg {
+    .headtop > .logo >.realLogo > h1 > a > svg {
         width: 40px;
         height: 40px;
     }
     svg >.st0{fill:#fff;}
 	svg >.st1{fill:#fff;}
 
-    .headtop > .logo > a > .realLogo > h1{
+    .headtop > .logo >.realLogo > h1{
+        width: 182px;
+    }
+    .headtop > .logo >.realLogo > h1 > a{
         font-size: 24px;
         font-weight: normal;
         color: #fff;
@@ -1935,11 +1987,11 @@ footer > .ft > .footerInfo > p:nth-child(4){
         width: 78px;
         margin: 30% 64%;
     }
-    .orgPro > .oneDay > .question >img{
+    .orgPro > .oneDay > .question >a > img{
         width: 10px;
         height: 10px;
     }
-    .orgPro > .oneDay > .question >p{
+    .orgPro > .oneDay > .question > a > p{
         font-size: 10px;
     }
 
@@ -1999,7 +2051,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
     .notice > .notiform > .notiwrap{
         line-height: 32px;
     }
-    .notice > .notiform > .notiwrap >h3{
+    .notice > .notiform > .notiwrap >p{
         font-size: 14px;
     }
     .notice > .notiform > .notiwrap >div{
