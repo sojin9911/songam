@@ -314,8 +314,10 @@
                 
             <section id="second">
                 <article class="newsletter">
-                <h2>뉴스레터</h2>
-                <button class="more_button">MORE</button>
+                    <div class="newsTop">
+                        <h2>뉴스레터</h2>
+                        <button class="more_button">MORE</button>
+                    </div>
                 <div class="newsPre">
                     <div class="leftSec">
                         <img src="img/뉴스레터1.png" alt="">
@@ -355,15 +357,18 @@
                 <h2>단체 프로그램</h2>
                 <div class="oneDay">
                     <img src="img/단체프로그램.png" alt="단체프로그램">
-                    <h2>당일체험 단체 프로그램</h2>
-                    <p>연령대에 맞춘 다양한 체험들이 준비되어 있어요!</p>
-                    <p>30명 이상 신청 가능</p>
-                    <div class="question">
-                        <a href="tel:031-894-6000">
-                        <img src="img/tel.png" alt="전화">
-                        <p>031-894-6000 </p>
-                        </a>
-                    </div>
+                    <div class="oneDayInfo">
+                        <h2>당일체험 단체 프로그램</h2>
+                        <p>연령대에 맞춘 다양한 체험들이 준비되어 있어요!</p>
+                        <p>30명 이상 신청 가능</p>
+                    
+                        <div class="question">
+                            <a href="tel:031-894-6000">
+                            <img src="img/tel.png" alt="전화">
+                            <p>031-894-6000 </p>
+                            </a>
+                        </div>
+                     </div>
                 </div>
                 
                 <ul>
@@ -414,8 +419,10 @@
             
             
             <section class="gallery">
-                <h2>천체 갤러리</h2>
-                <button class="more_button">MORE</button>
+                <div class="galleryTop">
+                    <h2>천체 갤러리</h2>
+                    <button class="more_button">MORE</button>
+                </div>
                 <div class="orbWrap">
                     <!-- translateX(-100%->대충 widht 계산) -->
                     <!-- <ul>
@@ -453,8 +460,10 @@
 
 
         <section class="notice">
-            <h2>송암스페이스센터 공지사항</h2>
-            <button class="more_button">MORE</button>
+            <div class="noticeTop">
+                <h2>송암스페이스센터 공지사항</h2>
+                <button class="more_button">MORE</button>
+            </div>
             <div class="notiform">
                 <div class="notiwrap">
                     <p>코로나(방역패스) 운영 안내</p> 
@@ -552,12 +561,21 @@
                 mobileMenu[i].classList.add('active');
                 mobileIndex = i;
             });
+
+            mobileMenu[i].addEventListener('mouseout', ()=> {
+                mobileMenu[i].classList.remove('active');
+            })
+
             tabletMenu[i].addEventListener('click', ()=> {
                 console.log(i,"누름")
                 tabletMenu[tabletIndex].classList.remove('active');
                 tabletMenu[i].classList.add('active');
                 tabletIndex = i;
             });
+            tabletMenu[i].addEventListener('mouseout', ()=> {
+                tabletMenu[i].classList.remove('active');
+            })
+
         }
         
 
