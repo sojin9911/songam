@@ -255,6 +255,7 @@ nav > .main_menu > li >a{
     height: 640px;
     margin: 50px auto 82px auto;
     display: flex;
+    flex-wrap: wrap;
 }
 
 #first > article {
@@ -266,11 +267,12 @@ nav > .main_menu > li >a{
 }
 .observation > .tarWrap{
     margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .observation > .tarWrap > .target{
     width: 176px;
     height: 260px;
-    float: left;
     margin-right: 32px;
     position: relative;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -537,6 +539,7 @@ nav > .main_menu > li >a{
     margin: 0 auto 82px auto;
     height: 447px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 #second > article{
@@ -738,7 +741,7 @@ nav > .main_menu > li >a{
     width: 100%;
     height: 300px;
     margin: 0 auto 82px auto;
-    cursor: pointer;
+
 }
 .gallery >.galleryTop{
     display: flex;
@@ -926,9 +929,9 @@ footer > .ft > .footerInfo > p:nth-child(4){
 
     /* *{background-color: bisque;} */
     .more_button{background-color: #252958; font-size: 14px; color: white; width: 60px; height: 35px; border: none; padding: 0;}
-    .more_button:active{background-color: white; color: #252958; transition: 0.5s;}
+    .more_button:active{background-color: white; color: #252958; transition: 0.2s;}
     .whButton{background-color:transparent; font-size: 10px; width: 41px; line-height: 21px; border: 1px solid #fff; color: #fff; }
-    .whButton:active{background-color: #f0d047; border: none; transition: 0.5s;}
+    .whButton:active{background-color: #f0d047; border: none; transition: 0.2s;}
 
 
     h1{font-size: 34px; font-weight: normal;}
@@ -1065,14 +1068,9 @@ footer > .ft > .footerInfo > p:nth-child(4){
 
     #first {
         width: 782px;
-        height: 1357px;
+        height: 1380px;
         margin: 0 auto;
     }
-
-    #first > article {
-        float: none;
-    }
-
 
     .observation{
         width: 592px;
@@ -1115,8 +1113,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
     /* 날짜 정보 */
     .today{
         width: 486px;
-        margin-left: 136px;
-        margin-top: 56px;
+        margin: 0 auto;
     }
 
     .today > h2{
@@ -1139,7 +1136,6 @@ footer > .ft > .footerInfo > p:nth-child(4){
     }
     .calendar{
         width: 178px;
-        float: left;
         margin-top: 30px;
     }
 
@@ -1282,12 +1278,9 @@ footer > .ft > .footerInfo > p:nth-child(4){
     #second{
         width: 782px;
         height: 1015px;
-        margin: 56px auto;
+        margin: 60px auto;
     }
 
-    #second > article{
-        float: none;
-    }
     /* 뉴스레터 */
 
     .newsletter{
@@ -1351,7 +1344,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
     /* 단체프로그램 */
     .orgPro{
         width: 488px;
-        float: left;
+
     }
     .orgPro >h2{
         display: block;
@@ -1372,20 +1365,20 @@ footer > .ft > .footerInfo > p:nth-child(4){
 
     .orgPro > .oneDay > img{
         position: absolute;
-        float: left;
+
         top: 13px;
     }
     /* 노답구간 */
 
     .orgPro > .oneDay >h2{
         display: inline-block;
-        float: right;
+
         color: #00204A;
         margin-bottom: 5px;
     }
     .orgPro > .oneDay > p{
         display: inline-block;
-        float: right;
+
     }
 
 
@@ -1398,13 +1391,13 @@ footer > .ft > .footerInfo > p:nth-child(4){
         
     }
     .orgPro > .oneDay > .question >img{
-        float: left;
+
         margin-top: 4px;
         margin-right: 3px;
     }
     .orgPro > .oneDay > .question > p{
         display: inline-block;
-        float: right;
+
         
     }
 
@@ -1451,7 +1444,6 @@ footer > .ft > .footerInfo > p:nth-child(4){
         color: #4f4f4f;
     }
     .orgPro > ul > li >.participant> .partibott >img{
-        float: right;
         margin-top: 6px;
     }
 
@@ -1472,14 +1464,6 @@ footer > .ft > .footerInfo > p:nth-child(4){
         height: 130px;
     }
    
-
-
-
-
-
-
-
-
 
 
     /* 공지사항 */
@@ -1542,6 +1526,9 @@ footer > .ft > .footerInfo > p:nth-child(4){
     footer > .ft > .footerInfo > p:nth-child(1),
     footer > .ft > .footerInfo > p:nth-child(2){
         margin-bottom: 11px;
+    }
+    footer > .ft > .footerInfo > p:nth-child(3){
+        width: 180px;
     }
 
 }
@@ -1720,7 +1707,9 @@ footer > .ft > .footerInfo > p:nth-child(4){
     }
     .main_banner > .timeInfo > ul{
         height: 13px;
-        display: inline-block;
+        padding: 8px;
+        justify-content: center;
+        flex-wrap: wrap;
     }
     .main_banner > .timeInfo > ul > li{
         color: #fff;
@@ -1743,13 +1732,11 @@ footer > .ft > .footerInfo > p:nth-child(4){
     }
 
     #first > article{
-        float: none;
         margin: 0 auto 48px auto;
-        height: 731px;
+        height: auto;
     }
     .observation{
         width: 328px;
-        height: 731px;
     }
     .observation >h2{
         margin-bottom: 24px;
@@ -1825,6 +1812,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
     .today{
         width: 328px;
         margin: 0 auto;
+        height: 540px;
     }
     .today >h2{
         text-align: center;
@@ -1833,6 +1821,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
     .today > .weatherInfo{
         width: 328px;
         padding: 0;
+        height: 530px;
     }
     
     .today > .weatherInfo >.topInfo{
@@ -2081,7 +2070,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
        height: 63px;
     }
     footer >.ft{
-        width: 0;
+        width: 100%;
         height: 0;
         padding: 0;
     }
@@ -2090,13 +2079,17 @@ footer > .ft > .footerInfo > p:nth-child(4){
     .ft > .footerInfo >p:last-child{
         display: none;
     }
+    .ft > .footerInfo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     footer >.ft > .footerInfo{
         padding-top: 5px;
-        margin: 0;
-        margin-left: -100px;
-        float: none;
+        margin:auto;
         width: 208px;
         text-align: center;
+        height: 63px;
         box-sizing: border-box;
     }
     footer > .ft > .footerInfo >p{
