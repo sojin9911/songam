@@ -10,7 +10,7 @@ body{margin: 0 ; -ms-overflow-style: none; }::-webkit-scrollbar { display: none;
 
 
 
-@media screen and (min-width: 1365px) {
+
 .more_button{background-color: #252958; font-size: 16px; color: white; width: 67px; height: 35px; border: none; padding: 0;}
 .more_button:hover{background-color: white; color: #252958; transition: 0.5s;}
 .whButton{background-color:transparent; font-size: 16px; width: 67px; line-height: 35px; border: 1px solid #fff; color: #fff; }
@@ -35,7 +35,7 @@ header{
     height: 140px;
     margin: 0 auto;
     }
-}
+
 .login{
 
     float: right;   
@@ -624,10 +624,9 @@ nav > .main_menu > li >a{
     height: 140px;
     border-radius: 24px;
     position: relative;
-    padding: 12px 25px 0 14px;
+    padding: 12px;
     box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -636,6 +635,9 @@ nav > .main_menu > li >a{
 }
 /* 노답구간 */
 .orgPro > .oneDay > .oneDayInfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
 }
 .orgPro > .oneDay > .oneDayInfo h2{
     display: inline-block;
@@ -663,6 +665,7 @@ nav > .main_menu > li >a{
 .orgPro > .oneDay >.oneDayInfo > .question > a > img{
     width: 16px;
     height: 16px;
+    margin:  0 2px;
 }
 .orgPro > .oneDay >.oneDayInfo> .question > a > p{
     display: inline-block;
@@ -945,7 +948,10 @@ footer > .ft > .footerInfo > p:nth-child(4){
         z-index: 2;
         background-color: #fff;
     }
-
+    .headtop{
+        width: 100%;
+        height: 103px;
+    }
     .headtop > .logo >.realLogo {
         height: 103px;
         padding-top: 0;
@@ -1353,21 +1359,6 @@ footer > .ft > .footerInfo > p:nth-child(4){
 
     }
 
-    .orgPro > .oneDay{
-        width: 488px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-        height: 140px;
-        border-radius: 24px;
-        position: relative;
-        padding: 12px 25px 0 14px;
-        box-sizing: border-box;
-    }
-
-    .orgPro > .oneDay > img{
-        position: absolute;
-
-        top: 13px;
-    }
     /* 노답구간 */
 
     .orgPro > .oneDay >h2{
@@ -1550,10 +1541,9 @@ footer > .ft > .footerInfo > p:nth-child(4){
         height: 92px; 
         z-index: 2;
     }
-    .headtop{position: relative;}
+    .headtop{position: relative; width: 100%;}/*여기 수정*/
     .headtop > .logo > .realLogo{
         height: 92px;
-        /* padding-top: 28px; */
         width: 70%;
         margin: 0 auto;
     }
@@ -1566,6 +1556,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
 
     .headtop > .logo >.realLogo > h1{
         width: 182px;
+        padding-top: 15px;
     }
     .headtop > .logo >.realLogo > h1 > a{
         font-size: 24px;
@@ -1909,7 +1900,6 @@ footer > .ft > .footerInfo > p:nth-child(4){
     }
 
     #second > article{
-        float: none;
         margin-top: 66px;
     }
 
@@ -1917,7 +1907,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
     #second > .newsletter{
         width: 328px;
         height: 347px;
-        margin: 66px auto;
+        margin: 0 auto;
     }
     #second > .newsletter >h2{
         font-size: 16px;
@@ -1960,6 +1950,11 @@ footer > .ft > .footerInfo > p:nth-child(4){
 
     .orgPro > .oneDay{
         width: 328px;
+        height: 100px;
+    }
+    .orgPro > .oneDay > img{
+        width: 80px;
+        height: 80px;
     }
 
     .orgPro > .oneDay >h2{
@@ -1968,31 +1963,23 @@ footer > .ft > .footerInfo > p:nth-child(4){
         box-sizing: border-box;
     }
 
-    .orgPro > .oneDay > p:first-of-type{
+  .orgPro > .oneDay >.oneDayInfo p:first-of-type{
         display: none;
     }
-    .orgPro > .oneDay > p{
-        position: absolute;
-        top: 84px;
-        right: 30px;
-        font-size: 10px;
+    .orgPro > .oneDay >.oneDayInfo p{
+      font-size: 12px;
     }
-
-    .orgPro > .oneDay > .question{
-        width: 78px;
-        margin: 30% 64%;
+    .orgPro > .oneDay > .oneDayInfo{
+        width: 218px;
     }
-    .orgPro > .oneDay > .question >a > img{
-        width: 10px;
-        height: 10px;
-    }
-    .orgPro > .oneDay > .question > a > p{
-        font-size: 10px;
+    .orgPro > .oneDay > .oneDayInfo .question > a {
+        justify-content: end;
+        margin-top: 2px;
     }
 
     .orgPro > ul > li >.participant{
         width: 154px;
-        height: 112px;
+        height: 100px;
     }
     .orgPro > ul > li >.participant > h3{
         font-size: 13px;
@@ -2005,13 +1992,13 @@ footer > .ft > .footerInfo > p:nth-child(4){
     }
     .orgPro > ul > li >.participant> .partibott > a >img{
         width: 14px;
-        height: 13px;
+        height: 14px;
     }
 
 
     .gallery{
         width: 100%;
-        height: 130px;
+        height: 150px;
         margin: 0 auto 68px auto;
     }
     .gallery > h2{
@@ -2032,6 +2019,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
     .orbWrap > .orb > .bottom{
         font-size: 10px;
         left: 10px;
+        padding-right: 5px;
     }
 
 
