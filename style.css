@@ -455,6 +455,7 @@ nav > .main_menu > li >a{
 .botInfo{
     width: 420px;
     display: flex;
+    justify-content: space-between;
 }
 /* 일출 */
 .botInfo >.sun{
@@ -487,9 +488,6 @@ nav > .main_menu > li >a{
 }
 
 /* 월출 */
-.botInfo >.moon{
-    margin-left: 64px;
-}
 .botInfo >.moon >.moonClock{
     width: 178px;
     height: 178px;
@@ -1192,9 +1190,6 @@ footer > .ft > .footerInfo > p:nth-child(4){
         font-weight: lighter;
     }
 
-    .botInfo{
-        width: 420px;
-    }
     /* 일출 */
     .botInfo >.sun{
         width: 178px;
@@ -1203,9 +1198,6 @@ footer > .ft > .footerInfo > p:nth-child(4){
     .botInfo >.sun > .sunClock {
         width: 177px;
         height: 176px;
-        border-radius: 50%;
-        background-color: dodgerblue;
-        display: inline-block;
     }
 
 
@@ -1226,14 +1218,10 @@ footer > .ft > .footerInfo > p:nth-child(4){
     }
 
     /* 월출 */
-    .botInfo >.moon{
-        margin-left: 64px;
-    }
+
     .botInfo >.moon >.moonClock{
         width: 178px;
         height: 178px;
-        border-radius: 50%;
-        background-color: gainsboro;
         margin-bottom: 10px;
         
     }
