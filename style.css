@@ -1918,6 +1918,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
     .orgPro > .oneDay{
         width: 328px;
         height: 100px;
+        justify-content: space-between;
     }
     .orgPro > .oneDay > img{
         width: 80px;
