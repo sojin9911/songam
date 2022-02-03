@@ -1765,6 +1765,10 @@ footer > .ft > .footerInfo > p:nth-child(4){
     .observation > .tarWrap > .target:nth-child(6) p{
         margin-top: 0;
     }
+    .observation > .tarWrap > .target:nth-child(5) p:last-of-type,
+    .observation > .tarWrap > .target:nth-child(6) p:last-of-type{
+        display: none;
+    }
     .today{
         width: 328px;
         margin: 0 auto;
