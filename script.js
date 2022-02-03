@@ -5,24 +5,39 @@ let tabletIndex = 0;
     
 for (let i=0; i < mobileMenu.length; i++) {
     mobileMenu[i].addEventListener('click', ()=> {
-        mobileMenu[mobileIndex].classList.remove('active');
-        mobileMenu[i].classList.add('active');
-        mobileIndex = i;
+
+        if(i==mobileIndex){
+            mobileMenu[mobileIndex].classList.remove('active');
+            mobileIndex=-1;
+        }
+        else{
+            console.log(i,"누름")
+            if (mobileIndex>=0){
+                mobileMenu[mobileIndex].classList.remove('active');
+            }
+            mobileMenu[i].classList.add('active');
+            mobileIndex = i;
+        }
     });
 
-    mobileMenu[i].addEventListener('mouseout', ()=> {
-        mobileMenu[i].classList.remove('active');
-    })
+
+
 
     tabletMenu[i].addEventListener('click', ()=> {
-        console.log(i,"누름")
-        tabletMenu[tabletIndex].classList.remove('active');
-        tabletMenu[i].classList.add('active');
-        tabletIndex = i;
+
+        if(i==tabletIndex){
+            tabletMenu[tabletIndex].classList.remove('active');
+            tabletIndex=-1;
+        }
+        else{
+            console.log(i,"누름")
+            if (tabletIndex>=0){
+                tabletMenu[tabletIndex].classList.remove('active');
+            }
+            tabletMenu[i].classList.add('active');
+            tabletIndex = i;
+        }
     });
-    tabletMenu[i].addEventListener('mouseout', ()=> {
-        tabletMenu[i].classList.remove('active');
-    })
 
 }
 

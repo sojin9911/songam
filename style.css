@@ -34,11 +34,11 @@ header{
     width: 1216px;
     height: 140px;
     margin: 0 auto;
-    }
+    position: relative;
+}
 
 .login{
 
-    float: right;   
     font-size: 16px;
     margin-top: 4px;
     cursor: pointer;
@@ -46,12 +46,14 @@ header{
 }
 .login > ul{
     list-style: none;
-    height: 16px
+    height: 16px;
+    position: absolute;
+    right: 0;
     
 }
 .login > ul > li{
-    float: left;
     padding: 0 9px ;
+    display: inline-block;
     
 }
 .login > ul > li:first-child{   
@@ -139,7 +141,6 @@ nav > .main_menu{
 }
 nav > .main_menu >li{
     width: 280px;
-    margin-right: 32px;
 }
 nav > .main_menu >li:last-child{
     margin: 0;
@@ -152,9 +153,6 @@ nav > .main_menu > li > .sub_menu{
     padding: 0;
 }
 
-/* nav > .main_menu > li{
-    float: left;
-} */
 nav > .main_menu > li >a{
     line-height: 47px;
 }
@@ -208,8 +206,6 @@ nav > .main_menu > li >a{
     font-size: 48px;    
     width: 100%;
     /* background-color: cyan; */
-    display: flex;
-    justify-content: center;
     color: #fff;
 }
 
@@ -221,12 +217,12 @@ nav > .main_menu > li >a{
     width: 970px;
     font-size: 20px;
     margin: 0 auto;
-    padding-left: 100px;
     
 }
 
 .main_banner > .timeInfo > ul{
     display: flex;
+    justify-content: space-between;
 }
 .main_banner > .timeInfo > ul>  li{
     
@@ -300,12 +296,12 @@ nav > .main_menu > li >a{
 }
 
 .observation >.tarWrap > .target > .name-space>figure{
-    float: left;
     padding-right: 6px;
+    display: inline-block;
 }
 .observation > .tarWrap > .target >.name-space>.name{
-    float: left;
     margin-bottom: 21px;
+    display: inline-block;
 }
 .observation > .tarWrap > .target >.name-space>.name >span{
     font-weight: bold;
@@ -330,23 +326,11 @@ nav > .main_menu > li >a{
     box-sizing: border-box;
 }
 
-.observation > .tarWrap > .target:nth-child(2) p{
-    margin-top: 14px;
-}
-
-.observation > .tarWrap > .target:nth-child(3) p{
-    margin-top: 27px;
-}
-.observation > .tarWrap > .target:nth-child(4) p,
-.observation > .tarWrap > .target:nth-child(5) p,
-.observation > .tarWrap > .target:nth-child(6) p{
-    margin-top: 12px;
-}
-
 .observation > .tarWrap > .target:nth-child(5) p:last-of-type,
 .observation > .tarWrap > .target:nth-child(6) p:last-of-type{
     font-size: 14px;
     font-weight: bold;
+    margin-top: 16px;
 }
 
 
@@ -474,7 +458,6 @@ nav > .main_menu > li >a{
 }
 /* 일출 */
 .botInfo >.sun{
-    float: left;
     width: 178px;
 }
 
@@ -658,6 +641,7 @@ nav > .main_menu > li >a{
 }
 .orgPro > .oneDay >.oneDayInfo> .question > a{
     display: flex;
+    align-items: center;
 }
 .orgPro > .oneDay >.oneDayInfo> .question > a:link {
     color: #00204A;
@@ -666,11 +650,10 @@ nav > .main_menu > li >a{
     width: 16px;
     height: 16px;
     margin:  0 2px;
+    
 }
 .orgPro > .oneDay >.oneDayInfo> .question > a > p{
     display: inline-block;
-
-    
 }
 
 
@@ -697,7 +680,7 @@ nav > .main_menu > li >a{
     margin-bottom: 0;
 }
 .orgPro > ul > li >.participant{
-    width: 234px;
+    width: 232px;
     height: 125px;
     margin: 0;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -893,7 +876,6 @@ footer > .ft> .ftBg >h3{
     
 }
 footer > .ft > .footerInfo {
-    float: left;
     padding-top: 22px;
     width: 840px;
     margin-left:  37px;
@@ -1030,26 +1012,23 @@ footer > .ft > .footerInfo > p:nth-child(4){
     }
 
     .main_banner > h2{
-        padding-top: 129px;
+        padding-top: 100px;
         text-align: center;
         font-size: 32px;    
         width: 100%;
-        float: left;
         color: #fff;
     }
 
 
     .main_banner > .timeInfo{
-        padding-top: 236px;
+        padding-top: 80px;
         height: 38px;
         width: 569px;
-        text-align: center;
-        margin-top: 0;
+        padding-left: 0;
         
     }
 
     .main_banner > .timeInfo >ul > li{
-        float: left;
         margin-right: 8px;
         font-size: 12px;
         color: #fff;
@@ -1063,7 +1042,6 @@ footer > .ft > .footerInfo > p:nth-child(4){
 
 
     .main_banner >div{
-        text-align: center;
         margin-top: 30px;
     }
 
@@ -1190,7 +1168,6 @@ footer > .ft > .footerInfo > p:nth-child(4){
 
     /* 시민박명 */
     .twilight{
-        float: left;
         width: 178px;
         height: 236px;
         margin-left: 64px;
@@ -1220,7 +1197,6 @@ footer > .ft > .footerInfo > p:nth-child(4){
     }
     /* 일출 */
     .botInfo >.sun{
-        float: left;
         width: 178px;
     }
 
@@ -1251,7 +1227,6 @@ footer > .ft > .footerInfo > p:nth-child(4){
 
     /* 월출 */
     .botInfo >.moon{
-        float: left;
         margin-left: 64px;
     }
     .botInfo >.moon >.moonClock{
@@ -1284,7 +1259,8 @@ footer > .ft > .footerInfo > p:nth-child(4){
     #second{
         width: 782px;
         height: 1015px;
-        margin: 60px auto;
+        margin: 60px 0;
+        justify-content: center;
     }
 
     /* 뉴스레터 */
@@ -1298,11 +1274,6 @@ footer > .ft > .footerInfo > p:nth-child(4){
     .newsletter > h2{
         display: inline-block;
         margin-left: 234px;
-    }
-
-    .newsletter > button {
-        float: right;
-
     }
 
     .newsletter > .newsPre {
@@ -1350,7 +1321,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
     /* 단체프로그램 */
     .orgPro{
         width: 488px;
-
+        margin-left: 0;
     }
     .orgPro >h2{
         display: block;
@@ -1411,7 +1382,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
         margin-bottom: 0;
     }
     .orgPro > ul > li >.participant{
-        width: 234px;
+        width: 232px;
         height: 125px;
         margin: 0;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -1442,7 +1413,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
 
     .gallery{
         width: 100%;
-        height: 200px;
+        height: 210px;
         margin: 56px auto 56px auto;
     }
 
@@ -1454,13 +1425,17 @@ footer > .ft > .footerInfo > p:nth-child(4){
     .gallery > .orbWrap >.orb{
         height: 130px;
     }
+    .orbWrap > .orb > .bottom{
+        padding-right: 5px;
+        padding-right: 30px;
+    }
    
 
 
     /* 공지사항 */
     .notice{
         width: 782px;
-        margin-bottom: 237px;
+        margin-bottom: 72px;
     }
 
     .notice > .notiform > .notiwrap > div{
@@ -1550,6 +1525,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
     .headtop > .logo >.realLogo > h1 > a > svg {
         width: 40px;
         height: 40px;
+        margin-right: 5px;
     }
     svg >.st0{fill:#fff;}
 	svg >.st1{fill:#fff;}
@@ -1575,7 +1551,6 @@ footer > .ft > .footerInfo > p:nth-child(4){
         height: 10px;
         position: relative;
         cursor: pointer;
-        /* float: right; */
     }
     
     input[id="menuicon"] + label span{
@@ -1636,7 +1611,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
         width: 100%;
     }
 
-    .sidebar > ul >li{background: #11264f; line-height: 37px;}
+    .sidebar > ul >li{  border-bottom: 1px solid rgba(0, 0, 0, 0.2); line-height: 37px;}
     .sidebar > ul >li > a{
         font-size: 20px;
         padding: 5px;
@@ -1644,7 +1619,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
     .sidebar > ul > li > a:link,
     .sidebar > ul > li > a:visited{
         text-decoration: none;
-        color: #fff;
+        color: #000;
     }
     .sidebar > ul > li> ul{
         height: 0;
@@ -1652,9 +1627,8 @@ footer > .ft > .footerInfo > p:nth-child(4){
         transition: 0.5s;
     }
     .sidebar > ul > .active > ul{
-        background-color: #ffffff;
-        /* color: #000; */
         height: 150px;
+        padding: 10px;
     }
     .sidebar > ul > li > ul > li a:link,
     .sidebar > ul > li > ul > li a:visited{
@@ -1762,16 +1736,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
         margin-right: 0;
     }
     .observation > .tarWrap > .target > .name-space{
-        margin-bottom: 20px;
-    }
-
-    .observation > .tarWrap > .target > .name-space:nth-child(5),
-    .observation > .tarWrap > .target > .name-space:nth-child(6){
-        margin-bottom: 20px;
-    }
-    .observation > .tarWrap > .target > .name-space:nth-child(2) span,
-    .observation > .tarWrap > .target > .name-space:nth-child(5) span{
-        font-size: 12px;
+        margin-bottom: 0;
     }
     .observation > .tarWrap > .target > .name-space > img{
         width: 16px;
@@ -1909,9 +1874,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
         height: 347px;
         margin: 0 auto;
     }
-    #second > .newsletter >h2{
-        font-size: 16px;
-        margin-left: 132px;
+    #second > .newsletter > .newsTop{
         margin-bottom: 24px;
     }
     #second > .newsletter > .newsPre{
@@ -1963,7 +1926,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
         box-sizing: border-box;
     }
 
-  .orgPro > .oneDay >.oneDayInfo p:first-of-type{
+    .orgPro > .oneDay >.oneDayInfo p:first-of-type{
         display: none;
     }
     .orgPro > .oneDay >.oneDayInfo p{
@@ -1976,7 +1939,9 @@ footer > .ft > .footerInfo > p:nth-child(4){
         justify-content: end;
         margin-top: 2px;
     }
-
+    .orgPro > ul > li:nth-child(2n-1){
+        margin-right: 12px;
+    }
     .orgPro > ul > li >.participant{
         width: 154px;
         height: 100px;
