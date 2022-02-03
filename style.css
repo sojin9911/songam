@@ -1836,9 +1836,6 @@ footer > .ft > .footerInfo > p:nth-child(4){
     .botInfo > .sun p{
         font-size: 10px;
     }
-    .botInfo > .moon{
-        margin-left: 43px;
-    }
 
     .botInfo >.moon span{
         font-size: 10px;
