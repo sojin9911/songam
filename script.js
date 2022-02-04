@@ -11,7 +11,7 @@ for (let i=0; i < mobileMenu.length; i++) {
             mobileIndex=-1;
         }
         else{
-            console.log(i,"누름")
+            // console.log(i,"누름")
             if (mobileIndex>=0){
                 mobileMenu[mobileIndex].classList.remove('active');
             }
@@ -30,7 +30,7 @@ for (let i=0; i < mobileMenu.length; i++) {
             tabletIndex=-1;
         }
         else{
-            console.log(i,"누름")
+            // console.log(i,"누름")
             if (tabletIndex>=0){
                 tabletMenu[tabletIndex].classList.remove('active');
             }
@@ -52,6 +52,7 @@ let startAngle = stT/4;
 let endAngle = enT/4;
 
 sun.style.backgroundImage="conic-gradient(#11264f " + startAngle + "deg, #ff7473 0 " + endAngle + "deg, #11264f 0)";
+sun.style.backgroundImage="-webkit-conic-gradient(#11264f " + startAngle + "deg, #ff7473 0 " + endAngle + "deg, #11264f 0)";
 
 
 const moon = document.querySelector('.moonClock');

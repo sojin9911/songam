@@ -956,17 +956,6 @@ footer > .ft > .footerInfo > p:nth-child(4){
         line-height: 35px;
     }
 
-
-
-    /* .main_menu > li > ul {
-        width: 182px;
-        position: absolute;
-        display: none;
-    } */
-    /* .main_menu > li:active > ul {
-        background-color: #fff;
-        display: block;
-    } */
     .main_menu > li > ul > li > a{
         color: #2b2b2b;
         font-size: 14px;
@@ -982,7 +971,6 @@ footer > .ft > .footerInfo > p:nth-child(4){
     }
     nav > ul > .active > ul {
         background-color: #fff;
-        /* color: #000; */
         height: auto;
     }
 
@@ -1046,7 +1034,6 @@ footer > .ft > .footerInfo > p:nth-child(4){
 
     /* 태블릿 관측대상 */
     .observation{
-        width: 592px;
         margin: 25px 100px 0  100px;
     }
 
@@ -1493,7 +1480,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
         height: 92px; 
         z-index: 2;
     }
-    .headtop{position: relative; width: 100%;}/*여기 수정*/
+    .headtop{position: relative; width: 100%;}
     .headtop > .logo > .realLogo{
         height: 92px;
         width: 70%;
