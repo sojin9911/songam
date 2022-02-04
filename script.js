@@ -53,6 +53,8 @@ let endAngle = enT/4;
 
 sun.style.backgroundImage="conic-gradient(#11264f " + startAngle + "deg, #ff7473 0 " + endAngle + "deg, #11264f 0)";
 sun.style.backgroundImage="-webkit-conic-gradient(#11264f " + startAngle + "deg, #ff7473 0 " + endAngle + "deg, #11264f 0)";
+sun.style.backgroundImage="-moz-conic-gradient(#11264f " + startAngle + "deg, #ff7473 0 " + endAngle + "deg, #11264f 0)";
+sun.style.backgroundImage="-o-conic-gradient(#11264f " + startAngle + "deg, #ff7473 0 " + endAngle + "deg, #11264f 0)";
 
 const moon = document.querySelector('.moonClock');
 let mori = new Date("2021-12-31 00:59:00");

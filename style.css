@@ -466,7 +466,7 @@ nav > .main_menu > li >a{
     width: 177px;
     height: 176px;
     border-radius: 50%;
-    background-color: rgb(202, 224, 247);
+    background-color: orange;
     display: inline-block;
 }
 
