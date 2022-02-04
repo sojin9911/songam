@@ -897,16 +897,6 @@ footer > .ft > .footerInfo > p:nth-child(4){
 
 
 
-/* footer > .ft > .footerInfo> p:first-of-type{
-    margin-left: 12px;
-}  */
-
-
-
-
-
-
-
 /* 태블릿 */
 @media screen and (min-width:834px) and (max-width:1365px){
 
@@ -1054,6 +1044,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
         margin: 0 auto;
     }
 
+    /* 태블릿 관측대상 */
     .observation{
         width: 592px;
         margin: 25px 100px 0  100px;
@@ -1092,7 +1083,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
     }
 
 
-    /* 날짜 정보 */
+    /*태블릿 날짜 정보 */
     .today{
         width: 486px;
         margin: 0 auto;
@@ -1251,7 +1242,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
         justify-content: center;
     }
 
-    /* 뉴스레터 */
+    /*태블릿 뉴스레터 */
 
     .newsletter{
         width: 582px;
@@ -1306,7 +1297,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
 
 
 
-    /* 단체프로그램 */
+    /* 태블릿 단체프로그램 */
     .orgPro{
         width: 488px;
         margin-left: 0;
@@ -1317,8 +1308,6 @@ footer > .ft > .footerInfo > p:nth-child(4){
         text-align: center;
 
     }
-
-    /* 노답구간 */
 
     .orgPro > .oneDay >h2{
         display: inline-block;
@@ -1397,7 +1386,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
         margin-top: 6px;
     }
 
-    /* 천체 갤러리 */
+    /*태블릿 천체 갤러리 */
 
     .gallery{
         width: 100%;
@@ -1420,7 +1409,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
    
 
 
-    /* 공지사항 */
+    /*태블릿 공지사항 */
     .notice{
         width: 782px;
         margin-bottom: 72px;
@@ -1440,7 +1429,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
 
 
 
-    /* 푸터 */
+    /* 태블릿 푸터 */
     footer{
         width: 100%;
         height: 128.2px;
@@ -1688,6 +1677,8 @@ footer > .ft > .footerInfo > p:nth-child(4){
         margin: 0 auto 48px auto;
         height: auto;
     }
+
+    /* 모바일 관측대상 */
     .observation{
         width: 328px;
     }
@@ -1757,6 +1748,9 @@ footer > .ft > .footerInfo > p:nth-child(4){
     .observation > .tarWrap > .target:nth-child(6) p:last-of-type{
         display: none;
     }
+
+
+    /* 모바일 날짜 */
     .today{
         width: 328px;
         margin: 0 auto;
@@ -1847,17 +1841,17 @@ footer > .ft > .footerInfo > p:nth-child(4){
     }
 
 
-
     #second{
         width: 100%;
         height: 866px;
     }
-
+    
     #second > article{
         margin-top: 66px;
     }
-
-
+    
+    
+    /* 모바일 뉴스레터 */
     #second > .newsletter{
         width: 328px;
         height: 347px;
@@ -1889,6 +1883,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
     }
 
 
+    /*모바일 단체 */
     .orgPro{
         width: 328px;
         margin: 0 auto;
@@ -1951,6 +1946,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
     }
 
 
+    /* 모바일 갤러리 */
     .gallery{
         width: 100%;
         height: 150px;
