@@ -11,8 +11,8 @@ body{margin: 0 ; -ms-overflow-style: none; }::-webkit-scrollbar { display: none;
 
 
 
-.more_button{background-color: #252958; font-size: 16px; color: white; width: 67px; height: 35px; border: none; padding: 0;}
-.more_button:hover{background-color: white; color: #252958; transition: 0.5s;}
+.more_button{background-color:#fff; font-size: 16px; color: #252958; width: 67px; height: 35px; border: none; padding: 0;}
+.more_button:hover{color: #f0d047; transition: 0.2s;}
 .whButton{background-color:transparent; font-size: 16px; width: 67px; line-height: 35px; border: 1px solid #fff; color: #fff; }
 .whButton:hover{background-color: #f0d047; border: 1px solid #f0d047; transition: 0.5s;;}
 
@@ -25,24 +25,26 @@ p{font-size: 16px; }
 
 header{
     width: 100%;
-    height: 186px;
+    height: 164px;
     position:fixed;
     background-color: #fff;
     z-index: 2;
 }
 .headtop{
     width: 1216px;
-    height: 140px;
+    height: 120px;
     margin: 0 auto;
     position: relative;
 }
 
 .login{
-
     font-size: 16px;
     margin-top: 4px;
-    cursor: pointer;
-    
+    cursor: pointer;    
+}
+.login li:first-of-type::after{
+    content: " | ";
+  padding: 1em;
 }
 .login > ul{
     list-style: none;
@@ -52,13 +54,8 @@ header{
     
 }
 .login > ul > li{
-    padding: 0 9px ;
-    display: inline-block;
-    
+    display: inline-block;    
 }
-.login > ul > li:first-child{   
-    border-right:1px solid black;
-} 
 .headtop > .logo{
     width: 100%;
 } 
@@ -88,54 +85,17 @@ header{
     font-size: 70px;
 }
 
-
-
-/* .headtop > .logo > a{
-    margin-top: 4px;
-    width: 100%;
-}
-.headtop > .logo > a >.realLogo {
-    text-align: center;
-    width: 50%;
-    margin: auto;
-    padding-top: 2%;
-    box-sizing: border-box;
-    height: 138px;
-}
-
-.headtop > .logo > a:link,
-.headtop > .logo > a:visited,
-.headtop > .logo > a:hover{
-    color: #11264f;
-    text-decoration: none;
-}
-.headtop > .logo > a > .realLogo > svg{
-    width: 100px;
-    height: 90px;
-    vertical-align: bottom;
-    margin-right:20px ;
-}
-.headtop > .logo > a > .realLogo > h1{
-    font-family: 'East Sea Dokdo', cursive;
-    display: inline-block;
-    font-size: 70px;
-} */
-
-
-
-
-
 .top{display: none;}
 nav{
     background-color: #11264f;
-    height: 47px;
+    height: 40px;
     width: 100%;
-    font-size: 20px;
+    font-size: 18px;
     
 }
 nav > .main_menu{
     width: 1216px;  
-    height: 47px;
+    height: 40px;
     margin: auto;
     display: flex;
 }
@@ -154,7 +114,7 @@ nav > .main_menu > li > .sub_menu{
 }
 
 nav > .main_menu > li >a{
-    line-height: 47px;
+    line-height: 40px;
 }
 
 .main_menu > li > a,
@@ -166,7 +126,8 @@ nav > .main_menu > li >a{
 }
 
 .sub_menu > li > a{
-    line-height: 56px;
+    line-height: 47px;
+    font-size: 16px;
 }
 
 
@@ -191,7 +152,7 @@ nav > .main_menu > li >a{
 
 .guard {
     width: 0;
-    height: 186px;
+    height: 164px;
   }
 .main_banner{
     width: 100%;
@@ -552,10 +513,13 @@ nav > .main_menu > li >a{
 .newsletter > .newsPre> .leftSec,
 .newsletter > .newsPre> .rightSec{
     display: inline-block;
+    overflow: hidden;
 }
 .newsletter > .newsPre> .leftSec > img{
     width: 160px;
     height: 100px;
+    transition: 0.5s;
+    overflow: hidden;
 }
 
 
@@ -585,7 +549,9 @@ nav > .main_menu > li >a{
 .newsletter > .newsPre:hover .rightSec{
     color: #00305c;
 }
-
+.newsPre:hover .leftSec > img{
+    transform: scale(1.1);
+}
 
 
 /* 단체프로그램 */
@@ -901,8 +867,8 @@ footer > .ft > .footerInfo > p:nth-child(4){
 @media screen and (min-width:834px) and (max-width:1365px){
 
     /* *{background-color: bisque;} */
-    .more_button{background-color: #252958; font-size: 14px; color: white; width: 60px; height: 35px; border: none; padding: 0;}
-    .more_button:active{background-color: white; color: #252958; transition: 0.2s;}
+    .more_button{background-color: #fff; font-size: 14px; color: #252958; width: 60px; height: 35px; border: none; padding: 0;}
+    .more_button:active{color: #f0d047; transition: 0.2s;}
     .whButton{background-color:transparent; font-size: 10px; width: 41px; line-height: 21px; border: 1px solid #fff; color: #fff; }
     .whButton:active{background-color: #f0d047; border: none; transition: 0.2s;}
 
@@ -1466,8 +1432,8 @@ footer > .ft > .footerInfo > p:nth-child(4){
 
 /* 모바일 */
 @media screen and (min-width:360px) and (max-width:833px){
-    .more_button{background-color: #252958; font-size: 11px; color: white; width: 51px; height: 26px; border: none; padding: 0;}
-    .more_button:active{background-color: white; color: #252958; transition: 0.5s;}
+    .more_button{background-color: #fff; font-size: 11px; color: #252958; width: 51px; height: 26px; border: none; padding: 0;}
+    .more_button:active{color: #f0d047; transition: 0.2s;}
     h2{font-size: 16px;}
     header > .headtop >.login,
     header > nav{
@@ -1976,6 +1942,7 @@ footer > .ft > .footerInfo > p:nth-child(4){
     }
     .notice > .notiform > .notiwrap >div{
         margin-left: 91px;
+        color: #555555;
     }
     .notice > .notiform > .notiwrap:nth-child(4),
     .notice > .notiform > .notiwrap:nth-child(5){
