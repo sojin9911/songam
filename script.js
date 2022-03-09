@@ -41,6 +41,12 @@ for (let i=0; i < mobileMenu.length; i++) {
 
 }
 
+date = new Date();
+year = date.getFullYear();
+month = date.getMonth() + 1;
+day = date.getDate();
+document.getElementById("todaydate").innerHTML = year + "년 " + month + "월 " + day + "일";
+
 
 const sun = document.querySelector('.sunClock');
 let start = new Date("2021-12-31 07:34:00");
